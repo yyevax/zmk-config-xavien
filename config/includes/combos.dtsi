@@ -48,7 +48,7 @@
 
         COMBO(PIPE,          &kp PIPE,       RT1 RT2 RT3,     DEF,          80,  50)  //    |
         COMBO(AMPS,          &kp AMPS,       RM1 RM2 RM3,     DEF,          80,  50)  //    &
-        COMBO(QMARK,        &kp QMARK,       RB1 RB2 RB3,     DEF,          80,  50)  //    ?
+        COMBO(EQUAL,        &kp EQUAL,       RB1 RB2 RB3,     DEF,          80,  50)  //    =
 
 
         //NAV
