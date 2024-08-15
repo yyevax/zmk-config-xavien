@@ -1,6 +1,3 @@
-layout:
-  qmk_keyboard: corne_rotated
-  qmk_layout: LAYOUT_split_3x5_3
 layers:
   default:
   - Q
@@ -555,4 +552,3 @@ combos:
 - p: [24, 25]
   k: {t: extra, h: toggle}
   l: [sys]
-
