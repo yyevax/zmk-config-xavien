@@ -369,43 +369,7 @@ layers:
   - ⌫
   - ⏎
   - {t: default, h: toggle}
-  tap:
-  - Q
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Y
-  - ;
-  - A
-  - R
-  - S
-  - T
-  - G
-  - M
-  - N
-  - E
-  - I
-  - O
-  - Z
-  - X
-  - C
-  - D
-  - V
-  - K
-  - H
-  - ','
-  - .
-  - /
-  - Esc
-  - ↹
-  - {t: ␣, type: held}
-  - {t: ⌫, type: held}
-  - ⏎
-  - ⌦
+  tap: [Q, W, F, P, B, J, L, U, Y, ;, A, R, S, T, G, M, N, E, I, O, Z, X, C, D, V, K, H, ',', ., /, Esc, ↹, ␣, ⌫, ⏎, ⌦]
   sys:
   - BT CLR
   - ''
@@ -439,8 +403,8 @@ layers:
   - Boot
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
