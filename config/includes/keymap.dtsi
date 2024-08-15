@@ -1,0 +1,226 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/ext_power.h>
+
+#include "mouse.dtsi"
+
+
+#include <dt-bindings/zmk/bt.h>
+
+// #define _BT_SEL_KEYS_ &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
+
+
+#define DEF 0
+#define NUM 1
+#define NAV 2
+#define SYM 3
+#define SCREEN 4
+#define FUN 5
+#define MEDIA 6
+#define VAL 7
+#define VALTWO 8
+#define EXTRA 9
+#define TAP 10
+#define SYS 11
+
+
+
+// Desktop and tab navigation shortcuts
+#define D_LT   LC(LG(LEFT))
+#define D_RT   LC(LG(RIGHT))
+#define D_CL   LC(LG(F4))
+
+#define TAB_RT LC(TAB)
+#define TAB_LT LC(LS(TAB))
+
+// Extra key bindings
+#define SWP_POS 13
+
+&lt { quick_tap_ms = <250>; };
+&lt { quick_tap_ms = <250>; };
+
+/* Homerow mods */
+
+/ {
+    behaviors {
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+        // Swapper for smart alt+tab
+        swapper: swapper {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <SWP_POS>;
+        };
+    };
+};
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <3 4>;
+            then-layer = <10>;
+        };
+    };
+};
+
+/ {
+    macros {
+        numdot: numdot {
+            label = "ZM_numdot";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>    
+                , <&macro_tap     &kp KP_N4 &kp KP_N6>    
+                , <&macro_release &kp LALT>
+                ;
+        };
+        grtsgn: grtsgn {
+            label = "ZM_grtsgn";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>    
+                , <&macro_tap     &kp KP_N6 &kp KP_N2>    
+                , <&macro_release &kp LALT>
+                ;
+        };
+    };
+};
+
+#include "combos.dtsi"
+
+/ {
+        keymap {
+                compatible = "zmk,keymap";
+
+                default_layer {  
+                label = "BASE"; //DEFAULT
+                bindings = <
+                &kp Q                 &kp W         &kp F             &kp P             &kp B                      &kp J            &kp L              &kp U           &kp Y           &kp SEMI        
+                &bhm LGUI A           &bhm LALT R   &bhm LCTRL S      &bhm LSHFT T      &kp G                      &kp M            &bhm RSHFT N       &bhm RCTRL E    &bhm RALT I     &bhm RGUI O     
+                &kp Z                 &kp X         &kp C             &kp D             &kp V                      &kp K            &kp H              &kp COMMA       &kp DOT         &kp FSLH        
+                                                    &lt MEDIA ESC     &lt NAV TAB       &lt SCREEN SPACE            &lt SYM BSPC     &lt NUM RET        &lt FUN DEL
+                        >;
+                };
+                num_layer {    
+                label = "NUM"; //NUM
+                
+                bindings = <
+                &kp ASTRK             &kp N7        &kp N8            &kp N9            &kp PLUS                   &none            &none              &none           &none           &none           
+                &kp SLASH             &kp N4        &kp N5            &kp N6            &kp EQUAL                  &none            &none              &none           &none           &none           
+                &kp GRAVE             &kp N1        &kp N2            &kp N3            &kp BSLH                   &none            &none              &none           &none           &none           
+                                                    &kp DOT           &kp N0            &kp MINUS                  &trans           &trans             &trans
+                        >;
+                };
+                nav_layer {    
+                label = "NAV"; //NAV
+                bindings = <
+                &none                     &none     &kp UP            &kp LC(C)         &kp LC(V)                  &none            &msc SCRL_UP       &mmv MOVE_UP    &msc SCRL_DOWN  &none                
+                &kp HOME              &kp LEFT      &kp DOWN          &kp RIGHT         &kp END                    &msc SCRL_LEFT   &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc SCRL_RIGHT           
+                &none                 &kp LC(X)     &none             &none             &none                      &none            &none              &none           &none           &none           
+                                                    &none             &none             &none                      &mkp LCLK        &mkp RCLK          &none
+                        >;  
+                };
+                sym_layer {   
+                label = "SYM"; //SYM
+                bindings = <
+                &kp PRCNT             &kp AMPS      &kp CARET         &kp LBRC          &kp RBRC                   &none            &none              &none           &none           &none           
+                &kp PIPE              &kp DLLR      &kp HASH          &kp LBKT          &kp RBKT                   &none            &none              &none           &none           &none           
+                &kp TILDE             &kp EXCL      &kp AT            &kp SQT           &kp DOUBLE_QUOTES          &none            &none              &none           &none           &none           
+                                                    &kp LPAR          &kp RPAR          &kp UNDER                  &trans           &trans             &trans 
+                        >;
+                };
+                screen_layer {   
+                label = "SCREEN"; //SCREEN
+                bindings = <
+                &none                   &none       &kp LC(F)         &kp TAB_LT         &kp TAB_RT                &none            &none              &none           &none           &none          
+                &kp LC(A)               &none       &kp LC(S)         &kp LS(TAB)        &swapper                  &none            &none              &none           &none           &none         
+                &none                   &none       &none             &kp D_LT           &kp D_RT                  &none            &none              &none           &none           &none          
+                                                    &trans            &trans            &trans                     &trans           &trans             &trans
+                        >;
+                };
+                fun_layer {  
+                label = "FUN"; //FUN
+                bindings = <
+                &kp F12               &kp F7        &kp F8            &kp F9            &kp PSCRN                  &none            &none              &none           &none           &none           
+                &kp F11               &kp F4        &kp F5            &kp F6            &kp SLCK                   &none            &none              &none           &none           &none           
+                &kp F10               &kp F1        &kp F2            &kp F3            &kp PAUSE_BREAK            &none            &none              &none           &none           &none           
+                                                    &kp K_APP         &kp TAB           &kp SPACE                  &trans           &none              &trans
+                        >;
+                };
+                media_layer {  
+                label = "MED"; //MEDIA
+                bindings = <
+                &none                 &none         &kp C_VOL_UP      &none             &kp C_MUTE                 &none            &none              &none           &none           &none           
+                &none                 &kp C_PREV    &kp C_VOL_DN      &kp C_NEXT        &kp C_PP                   &none            &none              &none           &none           &none           
+                &none                 &none         &none             &none             &kp C_STOP                 &none            &none              &none           &none           &none           
+                                                    &trans            &trans            &trans                     &trans           &trans             &trans
+                        >;
+                };
+                val_layer {  
+                label = "VALO"; //VAL
+                bindings = <
+                &kp TAB               &kp Q         &kp W             &kp E             &kp R                      &none            &none              &none           &none           &none           
+                &kp LSHFT             &kp A         &kp S             &kp D             &kp F                      &none            &none              &none           &none           &none           
+                &kp LCTRL             &kp Z         &kp X             &kp C             &bhm N4 B                  &none            &none              &none           &none           &none          
+                                                    &kp V             &lt VALTWO V      &kp SPACE                  &trans           &trans             &trans
+                        >;
+                };
+                valtwo_layer {  
+                label = "VAL2"; //VALTWO
+                bindings = <
+                &kp CAPSLOCK         &none          &none             &kp N4            &kp B                      &none            &none              &none           &none           &none           
+                &kp ESC              &kp N1         &kp N2            &kp N3            &kp G                      &none            &none              &none           &none           &none           
+                &none                &none          &kp T             &kp Y             &kp V                      &none            &none              &none           &none           &none           
+                                                    &to DEF           &kp LCTRL         &kp SPACE                  &trans           &trans             &trans
+                        >;
+                };
+                extra_layer {    
+                label = "EXTRA"; //EXTRA
+                bindings = <
+                &kp Q               &kp W           &kp E             &kp R             &kp T                      &kp Y            &kp U              &kp I           &kp O           &kp P            
+                &kp A               &kp S           &kp D             &kp F             &kp G                      &kp H            &kp J              &kp K           &kp L           &kp SEMI        
+                &kp Z               &kp X           &kp C             &kp V             &kp B                      &kp N            &kp M              &kp COMMA       &kp DOT         &kp FSLH        
+                                                    &kp ESC           &kp TAB           &kp SPACE                  &kp BSPC         &kp RET            &to DEF 
+                        >; 
+                };
+                tap_layer {  
+                label = "TAP"; //TAP
+                bindings = <
+                &kp Q                 &kp W         &kp F             &kp P             &kp B                      &kp J            &kp L              &kp U           &kp Y           &kp SEMI        
+                &kp A                 &kp R         &kp S             &kp T             &kp G                      &kp M            &kp N              &kp E           &kp I           &kp O     
+                &kp Z                 &kp X         &kp C             &kp D             &kp V                      &kp K            &kp H              &kp COMMA       &kp DOT         &kp FSLH        
+                                                    &kp ESC           &kp TAB           &kp SPACE                  &kp BSPC         &kp RET            &kp DEL
+                        >;
+                };
+                sys_layer {    
+                label = "SYS"; //SYS
+                bindings = <
+                &bt BT_CLR          &none           &none             &none             &to DEF                   &to DEF           &none              &none           &none           &bt BT_CLR          
+                &none               &none           &none             &none             &none                     &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      
+                &bootloader     &ext_power EP_ON    &out OUT_USB      &out OUT_BLE      &sys_reset                &sys_reset        &none              &none      &ext_power EP_ON     &bootloader            
+                                                    &trans            &trans            &trans                    &trans            &trans             &trans
+                        >; 
+                };
+        };
+};

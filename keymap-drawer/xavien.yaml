@@ -1,0 +1,558 @@
+layout:
+  qmk_keyboard: corne_rotated
+  qmk_layout: LAYOUT_split_3x5_3
+layers:
+  default:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - {t: A, h: Gui}
+  - {t: R, h: Alt}
+  - {t: S, h: Ctrl}
+  - {t: T, h: Shift}
+  - G
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
+  - {t: O, h: Gui}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - {t: Esc, h: media}
+  - {t: ↹, h: nav}
+  - {t: ␣, h: screen}
+  - {t: ⌫, h: sym}
+  - {t: ⏎, h: num}
+  - {t: ⌦, h: fun}
+  num:
+  - '*'
+  - '7'
+  - '8'
+  - '9'
+  - +
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - /
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - \
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - .
+  - '0'
+  - '-'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  nav:
+  - ''
+  - ''
+  - ↑
+  - Ctl+ C
+  - Ctl+ V
+  - ''
+  - Scroll ↑
+  - Mouse ↑
+  - Scroll ↓
+  - ''
+  - Home
+  - ←
+  - ↓
+  - →
+  - End
+  - Scroll ←
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - Scroll →
+  - ''
+  - Ctl+ X
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - Left Click
+  - Right Click
+  - ''
+  sym:
+  - '%'
+  - '&'
+  - ^
+  - '{'
+  - '}'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '|'
+  - $
+  - '#'
+  - '['
+  - ']'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '~'
+  - '!'
+  - '@'
+  - ''''
+  - '"'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - (
+  - )
+  - _
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  screen:
+  - ''
+  - ''
+  - Ctl+ F
+  - Tab Left
+  - Tab Right
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ctl+ A
+  - ''
+  - Ctl+ S
+  - Win Prev
+  - Win Next
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Desk Left
+  - Desk Right
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  fun:
+  - F12
+  - F7
+  - F8
+  - F9
+  - Print Scrn
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F11
+  - F4
+  - F5
+  - F6
+  - SLCK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F10
+  - F1
+  - F2
+  - F3
+  - Pause Break
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - APP
+  - ↹
+  - ␣
+  - {t: ▽, type: trans}
+  - ''
+  - {type: held}
+  media:
+  - ''
+  - ''
+  - Vol Up
+  - ''
+  - MUTE
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ⏮️
+  - Vol Down
+  - ⏭️
+  - ⏯
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - STOP
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  val:
+  - ↹
+  - Q
+  - W
+  - E
+  - R
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Shift
+  - A
+  - S
+  - D
+  - F
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ctrl
+  - Z
+  - X
+  - C
+  - {t: B, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - V
+  - {t: V, h: valtwo}
+  - ␣
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  valtwo:
+  - CAPSLOCK
+  - ''
+  - ''
+  - '4'
+  - B
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Esc
+  - '1'
+  - '2'
+  - '3'
+  - G
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - T
+  - Y
+  - V
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: default, h: toggle}
+  - {t: Ctrl, type: held}
+  - ␣
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  extra:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Esc
+  - ↹
+  - ␣
+  - ⌫
+  - ⏎
+  - {t: default, h: toggle}
+  tap:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - A
+  - R
+  - S
+  - T
+  - G
+  - M
+  - N
+  - E
+  - I
+  - O
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - Esc
+  - ↹
+  - {t: ␣, type: held}
+  - {t: ⌫, type: held}
+  - ⏎
+  - ⌦
+  sys:
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - {t: default, h: toggle}
+  - {t: default, h: toggle}
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - Boot
+  - EP ON
+  - Out USB
+  - Out BLE
+  - Reset
+  - Reset
+  - ''
+  - ''
+  - EP ON
+  - Boot
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [1, 2]
+  k: '{'
+  l: [default]
+- p: [2, 3]
+  k: '}'
+  l: [default]
+- p: [11, 12]
+  k: (
+  l: [default]
+- p: [12, 13]
+  k: )
+  l: [default]
+- p: [21, 22]
+  k: '['
+  l: [default]
+- p: [22, 23]
+  k: ']'
+  l: [default]
+- p: [1, 2, 3]
+  k: _
+  l: [default]
+- p: [11, 12, 13]
+  k: '-'
+  l: [default]
+- p: [21, 22, 23]
+  k: '!'
+  l: [default]
+- p: [6, 7]
+  k: ;
+  l: [default]
+- p: [7, 8]
+  k: ':'
+  l: [default]
+- p: [16, 17]
+  k: '"'
+  l: [default]
+- p: [17, 18]
+  k: ''''
+  l: [default]
+- p: [26, 27]
+  k: <
+  l: [default]
+- p: [27, 28]
+  k: '>'
+  l: [default]
+- p: [6, 7, 8]
+  k: '|'
+  l: [default]
+- p: [16, 17, 18]
+  k: '&'
+  l: [default]
+- p: [26, 27, 28]
+  k: '?'
+  l: [default]
+- p: [1, 2]
+  k: Ctl+ Z
+  l: [nav]
+- p: [2, 3]
+  k: Ctl+ Y
+  l: [nav]
+- p: [11, 12]
+  k: ⌫
+  l: [nav]
+- p: [12, 13]
+  k: ␣
+  l: [nav]
+- p: [13, 14]
+  k: CAPSLOCK
+  l: [nav]
+- p: [1, 2, 3]
+  k: Ctl+ F
+  l: [nav]
+- p: [10, 11]
+  k: Ctl+ A
+  l: [nav]
+- p: [11, 12, 13]
+  k: Ctl+ S
+  l: [nav]
+- p: [1, 2, 3]
+  k: Tab Close
+  l: [screen]
+- p: [11, 12, 13]
+  k: Win Close
+  l: [screen]
+- p: [21, 22, 23]
+  k: Ctl+Gui+ F4
+  l: [screen]
+- p: [11, 12, 13]
+  k: ⏯
+  l: [media]
+- p: [1, 2, 3]
+  k: {t: default, h: toggle}
+  l: [valtwo]
+- p: [30, 35]
+  k: {t: default, h: toggle}
+  l: [extra]
+- p: [30, 35]
+  k: {t: default, h: toggle}
+  l: [tap]
+- p: [4, 5]
+  k: {t: val, h: toggle}
+  l: [sys]
+- p: [14, 15]
+  k: {t: tap, h: toggle}
+  l: [sys]
+- p: [24, 25]
+  k: {t: extra, h: toggle}
+  l: [sys]
+

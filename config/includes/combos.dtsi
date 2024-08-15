@@ -1,0 +1,95 @@
+/* KEY POSITIONS (using keypos_def helpers)
+╭─────────────────────┬─────────────────────╮
+│ LT4 LT3 LT2 LT1 LT0 │ RT0 RT1 RT2 RT3 RT4 │
+│ LM4 LM3 LM2 LM1 LM0 │ RM0 RM1 RM2 RM3 RM4 │
+│ LB4 LB3 LB2 LB1 LB0 │ RB0 RB1 RB2 RB3 RB4 │
+╰───────╮ LH2 LH1 LH0 │ RH0 RH1 RH2 ╭───────╯
+        ╰─────────────┴─────────────╯       
+╭────────────────────┬────────────────────╮
+│  0   1   2   3   4 │  5   6   7   8   9 │
+│ 10  11  12  13  14 │ 15  16  17  18  19 │
+│ 20  21  22  23  24 │ 25  26  27  28  29 │
+╰───────╮ 30  31  32 │ 33  34  35 ╭───────╯
+        ╰────────────┴────────────╯        
+*/
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP, ...) \
+    combo_##NAME { \
+        timeout-ms = <TERM>; \
+        bindings = <BINDINGS>; \
+        key-positions = <KEYPOS>; \
+        layers = <LAYERS>; \
+        require-prior-idle-ms = <QUICKTAP>; \
+        __VA_ARGS__ \
+    };
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        //BASE LAYER
+ 
+        COMBO(LBRC,          &kp LBRC,       LT3 LT2,         DEF,          80,  50)  //    {
+        COMBO(RBRC,          &kp RBRC,       LT2 LT1,         DEF,          80,  50)  //    }
+        COMBO(LPAR,          &kp LPAR,       LM3 LM2,         DEF,          80,  50)  //    (
+        COMBO(RPAR,          &kp RPAR,       LM2 LM1,         DEF,          80,  50)  //    )
+        COMBO(LBKT,          &kp LBKT,       LB3 LB2,         DEF,          80,  50)  //    [
+        COMBO(RBKT,          &kp RBKT,       LB2 LB1,         DEF,          80,  50)  //    ]
+
+        COMBO(UNDER1,       &kp UNDER,       LT3 LT2 LT1,     DEF,          80,  50)  //    _
+        COMBO(MINUS,        &kp MINUS,       LM3 LM2 LM1,     DEF,          80,  50)  //    -
+        COMBO(EXCL,          &kp EXCL,       LB3 LB2 LB1,     DEF,          80,  50)  //    !
+
+        COMBO(SEMI,          &kp SEMI,       RT1 RT2,         DEF,          80,  50)  //    ;
+        COMBO(COLON,        &kp COLON,       RT2 RT3,         DEF,          80,  50)  //    :
+        COMBO(DQT,            &kp DQT,       RM1 RM2,         DEF,          80,  50)  //    "
+        COMBO(SQT,            &kp SQT,       RM2 RM3,         DEF,          80,  50)  //    '
+        COMBO(L_THAN,   &kp LESS_THAN,       RB1 RB2,         DEF,          80,  50)  //    <
+        COMBO(G_THAN,    &kp GREATER_THAN,   RB2 RB3,         DEF,          80,  50)  //    >
+
+        COMBO(PIPE,          &kp PIPE,       RT1 RT2 RT3,     DEF,          80,  50)  //    |
+        COMBO(AMPS,          &kp AMPS,       RM1 RM2 RM3,     DEF,          80,  50)  //    &
+        COMBO(QMARK,        &kp QMARK,       RB1 RB2 RB3,     DEF,          80,  50)  //    ?
+
+
+        //NAV
+        COMBO(UNDO,         &kp LC(Z),       LT3 LT2,         NAV,          80,  50)  //    UNDO
+        COMBO(REDO,         &kp LC(Y),       LT2 LT1,         NAV,          80,  50)  //    REDO
+        COMBO(BSPC,          &kp BSPC,       LM3 LM2,         NAV,          80,  50)  //    BACKSPACE
+        COMBO(SPACE,        &kp SPACE,       LM2 LM1,         NAV,          80,  50)  //    SPACE
+        COMBO(CAPSLOCK,  &kp CAPSLOCK,       LM1 LM0,         NAV,          80,  50)  //    CAPSLOCK
+
+        COMBO(FIND,        &kp LC(F),    LT3 LT2 LT1,        NAV,          80,  50)  //    CTRL + F
+        COMBO(ALL,         &kp LC(A),        LM4 LM3,        NAV,          80,  50)  //    CTRL + A
+        COMBO(SAVE,        &kp LC(S),    LM3 LM2 LM1,        NAV,          80,  50)  //    CTRL + S
+
+
+        //MOUSE
+        COMBO(TAB_CLOSE,   &kp LC(F4),       LT3 LT2 LT1,     SCREEN,        80,  50)  //    CTRL + F4
+        COMBO(WIN_CLOSE,   &kp LA(F4),       LM3 LM2 LM1,     SCREEN,        80,  50)  //    ALT  + F4
+        COMBO(DESK_CLOSE,    &kp D_CL,       LB3 LB2 LB1,     SCREEN,        80,  50)  //    WIN  + CTRL   + TAB
+
+        //MEDIA
+        COMBO(PLAYPAUSE,     &kp C_PP,       LM3 LM2 LM1,     MEDIA,        80,  50)  //    PLAY PAUSE
+        
+        //VALTWO
+        COMBO(TO_DEF,         &to DEF,       LT3 LT2 LT1,     VALTWO,       80,  50)  //    DEF LAYER CHANGE
+        
+        //EXTRA
+        COMBO(EXtoDEF,     &to DEF,       LH2 RH2,        EXTRA,        80,  50)  //    DEF LAYER CHANGE
+
+        //TAP
+        COMBO(toDEF,          &to DEF,       LH2 RH2,         TAP,          80,  50)  //    DEF LAYER CHANGE
+        
+        //SYS
+        COMBO(VAL,            &to VAL,       LT0 RT0,         SYS,          80,  50)  //    VAL LAYER CHANGE
+        COMBO(TAP,            &to TAP,       LM0 RM0,         SYS,          80,  50)  //    TAP LAYER CHANGE
+        COMBO(EXTRA,        &to EXTRA,      LB0 RB0,         SYS,          80,  50)  //    EXTRA LAYER CHANGE
+
+        /*combo_rbrc {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp RBKT>;
+            layers = <DEF>;
+        };*/
+    };
+};
