@@ -460,7 +460,7 @@ combos:
   k: '&'
   l: [default]
 - p: [26, 27, 28]
-  k: '?'
+  k: '='
   l: [default]
 - p: [1, 2]
   k: Ctl+ Z
