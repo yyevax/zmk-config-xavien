@@ -16,7 +16,7 @@ This keymap is mainly based on the [Miryoku](https://github.com/manna-harbour/mi
 Miryoku was the first layout I used when I built my wireless keyboard and had been accustomed to how it works.
 You can find my Miryoku ZMK Config [here](https://github.com/duanexavierbondad/miryoku_zmk_xavien).
 
-This firmware uses 12 layers in total, 2 of which are dedicated to a Gaming Layer. It also utilizes home row mods and combos for easy access to symbols on the base/default layer.
+This firmware uses 12 layers in total, 2 of which are dedicated to a Gaming Layer. It also utilizes home row mods and combos for easy access to symbols on the base/default layer. This layout utilizes the left hand side of the keyboard more that the right side to be able to maximize the use of shortcuts event when using the mouse.
 
 The default alpha layer is using Colemak-DH which also contains combo keys for symbols.
 The other layers are the following:
