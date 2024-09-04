@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: caksoylar
@@ -15,5 +17,11 @@ manifest:
     - name: zmk-tri-state
       remote: caksoylar
       revision: main
+    - name: zmk-helpers
+      revision: main
+      path: modules/helpers
+    - name: zmk-auto-layer
+      revision: main
+      path: modules/auto-layer
   self:
     path: config
