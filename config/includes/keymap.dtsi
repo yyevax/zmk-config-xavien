@@ -146,7 +146,7 @@ ZMK_HOLD_TAP(hmr,
                 label = "BASE"; //DEFAULT
                 bindings = <
                 &kp Q                 &kp W         &kp F             &kp P             &kp B                      &kp J            &kp L              &kp U           &kp Y           &kp SEMI        
-                &bhm LGUI A           &bhm LALT R   &bhm LCTRL S      &bhm LSHFT T      &kp G                      &kp M            &bhm RSHFT N       &bhm RCTRL E    &bhm RALT I     &bhm RGUI O     
+                &hml LGUI A           &hml LALT R   &hml LCTRL S      &hml LSHFT T      &kp G                      &kp M            &hmr RSHFT N       &hmr RCTRL E    &hmr RALT I     &hmr RGUI O     
                 &kp Z                 &kp X         &kp C             &kp D             &kp V                      &kp K            &kp H              &kp COMMA       &kp DOT         &kp FSLH        
                                                     &lt MEDIA ESC     &lt NAV TAB       &lt SCREEN SPACE            &lt SYM BSPC     &lt NUM RET        &lt FUN DEL
                         >;
