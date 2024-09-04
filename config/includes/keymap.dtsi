@@ -68,8 +68,6 @@
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) 
 
-
-
 /* Homerow mods */
 
 / {
