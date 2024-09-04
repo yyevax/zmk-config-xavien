@@ -31,6 +31,7 @@
 #define TAP 10
 #define SYS 11
 
+#define QUICK_TAP_MS 175
 
 
 // Desktop and tab navigation shortcuts
