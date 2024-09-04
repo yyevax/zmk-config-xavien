@@ -10,16 +10,16 @@ layers:
   - U
   - Y
   - ;
-  - {t: A, h: Gui}
-  - {t: R, h: Alt}
-  - {t: S, h: Ctrl}
-  - {t: T, h: Shift}
+  - '&hml LGUI A'
+  - '&hml LALT R'
+  - '&hml LCTRL S'
+  - '&hml LSHFT T'
   - G
   - M
-  - {t: N, h: Shift}
-  - {t: E, h: Ctrl}
-  - {t: I, h: Alt}
-  - {t: O, h: Gui}
+  - '&hmr RSHFT N'
+  - '&hmr RCTRL E'
+  - '&hmr RALT I'
+  - '&hmr RGUI O'
   - Z
   - X
   - C
