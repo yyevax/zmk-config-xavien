@@ -20,7 +20,7 @@ manifest:
       remote: caksoylar
       revision: main
     - name: zmk-helpers
+      remote: urob
       revision: main
-      path: modules/helpers
   self:
     path: config
