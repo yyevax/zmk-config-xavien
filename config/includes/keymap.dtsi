@@ -23,16 +23,17 @@
 #define MAC 1
 #define NUM 2
 #define NAV 3
-#define SYM 4
-#define SCREEN 5
-#define MACSCREEN 6
-#define FUN 7
-#define MEDIA 8
-#define VAL 9
-#define VALTWO 10
-#define EXTRA 11
-#define TAP 12
-#define SYS 13
+#define MACNAV 4
+#define SYM 5
+#define SCREEN 6
+#define MACSCREEN 7
+#define FUN 8
+#define MEDIA 9
+#define VAL 10
+#define VALTWO 11
+#define EXTRA 12
+#define TAP 13
+#define SYS 14
 
 
 
@@ -102,7 +103,7 @@ ZMK_HOLD_TAP(hmr,
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <SWP_POS>;
         };
-        swapper1: swapper1 {
+        swapper-mac: swapper {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
@@ -192,6 +193,15 @@ ZMK_HOLD_TAP(hmr,
                                                     &none             &none             &none                      &mkp LCLK        &mkp RCLK          &none
                         >;  
                 };
+                macnav_layer {    
+                label = "MACNAV"; //NAV
+                bindings = <
+                &none                     &none     &kp UP            &kp LG(C)         &kp LG(V)                  &none            &msc SCRL_UP       &mmv MOVE_UP    &msc SCRL_DOWN  &none                
+                &kp HOME              &kp LEFT      &kp DOWN          &kp RIGHT         &kp END                    &msc SCRL_LEFT   &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc SCRL_RIGHT           
+                &none                 &kp LG(X)     &none             &none             &none                      &none            &none              &none           &none           &none           
+                                                    &none             &none             &none                      &mkp LCLK        &mkp RCLK          &none
+                        >;  
+                };
                 sym_layer {   
                 label = "SYM"; //SYM
                 bindings = <
@@ -210,11 +220,11 @@ ZMK_HOLD_TAP(hmr,
                                                     &trans            &trans            &trans                     &trans           &trans             &trans
                         >;
                 };
-                mac_screen_layer {   
+                macscreen_layer {   
                 label = "MACSCREEN"; //MAC SCREEN
                 bindings = <
-                &none                   &none       &kp LC(F)         &kp TAB_LT         &kp TAB_RT                &none            &none              &none           &none           &none          
-                &kp LC(A)               &none       &kp LC(S)         &kp LG(TAB)        &swapper1                  &none            &none              &none           &none           &none         
+                &none                   &none       &kp LG(F)         &kp TAB_LT         &kp TAB_RT                &none            &none              &none           &none           &none          
+                &kp LC(A)               &none       &kp LG(S)         &kp LG(TAB)        &swapper-mac              &none            &none              &none           &none           &none         
                 &none                   &none       &none             &kp D_LT           &kp D_RT                  &none            &none              &none           &none           &none          
                                                     &trans            &trans            &trans                     &trans           &trans             &trans
                         >;

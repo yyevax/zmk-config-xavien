@@ -32,7 +32,7 @@ layers:
   - /
   - {t: Esc, h: media}
   - {t: ↹, h: nav}
-  - {t: ␣, h: mac_screen}
+  - {t: ␣, h: macscreen}
   - {t: ⌫, h: sym}
   - {t: ⏎, h: num}
   - {t: ⌦, h: fun}
@@ -110,6 +110,8 @@ layers:
   - Left Click
   - Right Click
   - ''
+  macnav: ['', '', ↑, Gui+ C, Gui+ V, '', Scroll ↑, Mouse ↑, Scroll ↓, '', Home, ←, ↓, →, End, Scroll ←, Mouse ←, Mouse ↓, Mouse →, Scroll →, '', Gui+ X, '', '',
+    '', '', '', '', '', '', '', '', '', Left Click, Right Click, '']
   sym:
   - '%'
   - '&'
@@ -184,10 +186,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  mac_screen:
+  macscreen:
   - ''
   - ''
-  - Ctl+ F
+  - Gui+ F
   - Tab Left
   - Tab Right
   - ''
@@ -197,9 +199,9 @@ layers:
   - ''
   - Ctl+ A
   - ''
-  - Ctl+ S
+  - Gui+ S
   - Gui+ ↹
-  - '&swapper1'
+  - '&swapper-mac'
   - ''
   - ''
   - ''
@@ -401,9 +403,9 @@ layers:
   - .
   - /
   - Esc
-  - {t: ↹, type: held}
+  - ↹
   - ␣
-  - {t: ⌫, type: held}
+  - ⌫
   - ⏎
   - {t: default, h: toggle}
   tap: [Q, W, F, P, B, J, L, U, Y, ;, A, R, S, T, G, M, N, E, I, O, Z, X, C, D, V, K, H, ',', ., /, Esc, ↹, ␣, ⌫, ⏎, ⌦]
