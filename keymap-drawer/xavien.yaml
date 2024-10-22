@@ -10,16 +10,16 @@ layers:
   - U
   - Y
   - ;
-  - '&hml LGUI A'
+  - '&hml LCTRL A'
   - '&hml LALT R'
-  - '&hml LCTRL S'
+  - '&hml LGUI S'
   - '&hml LSHFT T'
   - G
   - M
   - '&hmr RSHFT N'
-  - '&hmr RCTRL E'
+  - '&hmr LGUI E'
   - '&hmr RALT I'
-  - '&hmr RGUI O'
+  - '&hmr RCTRL O'
   - Z
   - X
   - C
@@ -32,7 +32,7 @@ layers:
   - /
   - {t: Esc, h: media}
   - {t: ↹, h: nav}
-  - {t: ␣, h: screen}
+  - {t: ␣, h: mac_screen}
   - {t: ⌫, h: sym}
   - {t: ⏎, h: num}
   - {t: ⌦, h: fun}
@@ -163,6 +163,43 @@ layers:
   - Ctl+ S
   - Win Prev
   - Win Next
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Desk Left
+  - Desk Right
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  mac_screen:
+  - ''
+  - ''
+  - Ctl+ F
+  - Tab Left
+  - Tab Right
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ctl+ A
+  - ''
+  - Ctl+ S
+  - Gui+ ↹
+  - '&swapper1'
   - ''
   - ''
   - ''
@@ -364,9 +401,9 @@ layers:
   - .
   - /
   - Esc
-  - ↹
+  - {t: ↹, type: held}
   - ␣
-  - ⌫
+  - {t: ⌫, type: held}
   - ⏎
   - {t: default, h: toggle}
   tap: [Q, W, F, P, B, J, L, U, Y, ;, A, R, S, T, G, M, N, E, I, O, Z, X, C, D, V, K, H, ',', ., /, Esc, ↹, ␣, ⌫, ⏎, ⌦]
@@ -403,8 +440,8 @@ layers:
   - Boot
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:

@@ -20,17 +20,19 @@
 
 
 #define DEF 0
-#define NUM 1
-#define NAV 2
-#define SYM 3
-#define SCREEN 4
-#define FUN 5
-#define MEDIA 6
-#define VAL 7
-#define VALTWO 8
-#define EXTRA 9
-#define TAP 10
-#define SYS 11
+#define MAC 1
+#define NUM 2
+#define NAV 3
+#define SYM 4
+#define SCREEN 5
+#define MACSCREEN 6
+#define FUN 7
+#define MEDIA 8
+#define VAL 9
+#define VALTWO 10
+#define EXTRA 11
+#define TAP 12
+#define SYS 13
 
 
 
@@ -100,6 +102,12 @@ ZMK_HOLD_TAP(hmr,
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <SWP_POS>;
         };
+        swapper1: swapper {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+            ignored-key-positions = <SWP_POS>;
+        };
     };
 };
 / {
@@ -156,6 +164,15 @@ ZMK_HOLD_TAP(hmr,
                                                     &lt MEDIA ESC     &lt NAV TAB       &lt SCREEN SPACE            &lt SYM BSPC     &lt NUM RET        &lt FUN DEL
                         >;
                 };
+                default_layer {  
+                label = "BASE"; //DEFAULT
+                bindings = <
+                &kp Q                 &kp W         &kp F             &kp P             &kp B                      &kp J            &kp L              &kp U           &kp Y           &kp SEMI        
+                &hml LCTRL A          &hml LALT R   &hml LGUI S       &hml LSHFT T      &kp G                      &kp M            &hmr RSHFT N       &hmr LGUI E     &hmr RALT I     &hmr RCTRL O     
+                &kp Z                 &kp X         &kp C             &kp D             &kp V                      &kp K            &kp H              &kp COMMA       &kp DOT         &kp FSLH        
+                                                    &lt MEDIA ESC     &lt NAV TAB       &lt MACSCREEN SPACE        &lt SYM BSPC     &lt NUM RET        &lt FUN DEL
+                        >;
+                };
                 num_layer {    
                 label = "NUM"; //NUM
                 
@@ -189,6 +206,15 @@ ZMK_HOLD_TAP(hmr,
                 bindings = <
                 &none                   &none       &kp LC(F)         &kp TAB_LT         &kp TAB_RT                &none            &none              &none           &none           &none          
                 &kp LC(A)               &none       &kp LC(S)         &kp LS(TAB)        &swapper                  &none            &none              &none           &none           &none         
+                &none                   &none       &none             &kp D_LT           &kp D_RT                  &none            &none              &none           &none           &none          
+                                                    &trans            &trans            &trans                     &trans           &trans             &trans
+                        >;
+                };
+                mac_screen_layer {   
+                label = "MACSCREEN"; //MAC SCREEN
+                bindings = <
+                &none                   &none       &kp LC(F)         &kp TAB_LT         &kp TAB_RT                &none            &none              &none           &none           &none          
+                &kp LC(A)               &none       &kp LC(S)         &kp LG(TAB)        &swapper1                  &none            &none              &none           &none           &none         
                 &none                   &none       &none             &kp D_LT           &kp D_RT                  &none            &none              &none           &none           &none          
                                                     &trans            &trans            &trans                     &trans           &trans             &trans
                         >;
