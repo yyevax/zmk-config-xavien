@@ -102,7 +102,7 @@ ZMK_HOLD_TAP(hmr,
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <SWP_POS>;
         };
-        swapper1: swapper {
+        swapper1: swapper1 {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
