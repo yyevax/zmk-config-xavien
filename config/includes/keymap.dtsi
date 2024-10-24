@@ -122,6 +122,16 @@ ZMK_HOLD_TAP(hmr,
 };
 
 / {
+    conditional_layers1 {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <6 7>;
+            then-layer = <14>;
+        };
+    };
+};
+
+/ {
     macros {
         numdot: numdot {
             label = "ZM_numdot";
