@@ -63,6 +63,18 @@
         COMBO(SAVE,        &kp LC(S),    LM3 LM2 LM1,        NAV,          80,  50)  //    CTRL + S
 
 
+        //MACNAV
+        COMBO(UNDO,         &kp LG(Z),       LT3 LT2,         MACNAV,      80,  50)  //    UNDO
+        COMBO(REDO,         &kp LG(Y),       LT2 LT1,         MACNAV,      80,  50)  //    REDO
+        COMBO(BSPC,          &kp BSPC,       LM3 LM2,         MACNAV,      80,  50)  //    BACKSPACE
+        COMBO(SPACE,        &kp SPACE,       LM2 LM1,         MACNAV,      80,  50)  //    SPACE
+        COMBO(CAPSLOCK,  &kp CAPSLOCK,       LM1 LM0,         MACNAV,      80,  50)  //    CAPSLOCK
+
+        COMBO(FIND,        &kp LG(F),    LT3 LT2 LT1,        MACNAV,       80,  50)  //    CTRL + F
+        COMBO(ALL,         &kp LG(A),        LM4 LM3,        MACNAV,       80,  50)  //    CTRL + A
+        COMBO(SAVE,        &kp LG(S),    LM3 LM2 LM1,        MACNAV,       80,  50)  //    CTRL + S
+
+
         //MOUSE
         COMBO(TAB_CLOSE,   &kp LC(F4),       LT3 LT2 LT1,     SCREEN,        80,  50)  //    CTRL + F4
         COMBO(WIN_CLOSE,   &kp LA(F4),       LM3 LM2 LM1,     SCREEN,        80,  50)  //    ALT  + F4

@@ -525,6 +525,30 @@ combos:
 - p: [11, 12, 13]
   k: Ctl+ S
   l: [nav]
+- p: [1, 2]
+  k: Gui+ Z
+  l: [macnav]
+- p: [2, 3]
+  k: Gui+ Y
+  l: [macnav]
+- p: [11, 12]
+  k: ⌫
+  l: [macnav]
+- p: [12, 13]
+  k: ␣
+  l: [macnav]
+- p: [13, 14]
+  k: CAPSLOCK
+  l: [macnav]
+- p: [1, 2, 3]
+  k: Gui+ F
+  l: [macnav]
+- p: [10, 11]
+  k: Gui+ A
+  l: [macnav]
+- p: [11, 12, 13]
+  k: Gui+ S
+  l: [macnav]
 - p: [1, 2, 3]
   k: Tab Close
   l: [screen]
