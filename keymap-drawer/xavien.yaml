@@ -630,6 +630,18 @@ combos:
 - p: [21, 22, 23]
   k: Ctl+Gui+ F4
   l: [screen]
+- p: [1, 2, 3]
+  k: Tab Close
+  l: [macscreen]
+- p: [11, 12, 13]
+  k: Win Close
+  l: [macscreen]
+- p: [21, 22, 23]
+  k: Ctl+Gui+ F4
+  l: [macscreen]
+- p: [0, 9]
+  k: {t: default, h: toggle}
+  l: [macscreen]
 - p: [11, 12, 13]
   k: ⏯
   l: [media]

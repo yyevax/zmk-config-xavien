@@ -75,10 +75,16 @@
         COMBO(SAVE_MAC,        &kp LG(S),    LM3 LM2 LM1,        MACNAV,       80,  50)  //    CTRL + S
 
 
-        //MOUSE
+        //SCREEN
         COMBO(TAB_CLOSE,   &kp LC(F4),       LT3 LT2 LT1,     SCREEN,        80,  50)  //    CTRL + F4
         COMBO(WIN_CLOSE,   &kp LA(F4),       LM3 LM2 LM1,     SCREEN,        80,  50)  //    ALT  + F4
         COMBO(DESK_CLOSE,    &kp D_CL,       LB3 LB2 LB1,     SCREEN,        80,  50)  //    WIN  + CTRL   + TAB
+
+        //MACSCREEN
+        COMBO(TAB_CLOSE_MAC,   &kp LC(F4),       LT3 LT2 LT1,     MACSCREEN,        80,  50)  //    CTRL + F4
+        COMBO(WIN_CLOSE_MAC,   &kp LA(F4),       LM3 LM2 LM1,     MACSCREEN,        80,  50)  //    ALT  + F4
+        COMBO(DESK_CLOSE_MAC,    &kp D_CL,       LB3 LB2 LB1,     MACSCREEN,        80,  50)  //    WIN  + CTRL   + TAB
+        COMBO(MAC_toDEF,         &to DEF,            LT4 RT4,     MACSCREEN,        80,  50)  //    WIN  + CTRL   + TAB
 
         //MEDIA
         COMBO(PLAYPAUSE,     &kp C_PP,       LM3 LM2 LM1,     MEDIA,        80,  50)  //    PLAY PAUSE
@@ -96,7 +102,7 @@
         COMBO(VAL,            &to VAL,       LT0 RT0,         SYS,          80,  50)  //    VAL LAYER CHANGE
         COMBO(TAP,            &to TAP,       LM0 RM0,         SYS,          80,  50)  //    TAP LAYER CHANGE
         COMBO(EXTRA,        &to EXTRA,       LB0 RB0,         SYS,          80,  50)  //    EXTRA LAYER CHANGE
-        COMBO(DEFAULT,          &to DEF,       LT4 RT4,         SYS,          80,  50)  //    EXTRA LAYER CHANGE
+        COMBO(DEFAULT,        &to DEF,       LT4 RT4,         SYS,          80,  50)  //    EXTRA LAYER CHANGE
 
         /*combo_rbrc {
             timeout-ms = <50>;
