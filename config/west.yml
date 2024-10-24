@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/urob
     - name: duanexavierbondad
       url-base: https://github.com/duanexavierbondad
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
   projects:
     - name: zmk
       remote: duanexavierbondad
@@ -19,7 +21,7 @@ manifest:
       remote: caksoylar
       revision: main
     - name: zmk-tri-state
-      remote: caksoylar
+      remote: dhruvinsh
       revision: main
     - name: zmk-helpers
       remote: urob
