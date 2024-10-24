@@ -1,4 +1,4 @@
-/*
+ /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -115,8 +115,8 @@ ZMK_HOLD_TAP(hmr,
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <3 4>;
-            then-layer = <11>;
+            if-layers = <5 6>;
+            then-layer = <14>;
         };
     };
 };
@@ -287,7 +287,7 @@ ZMK_HOLD_TAP(hmr,
                 label = "SYS"; //SYS
                 bindings = <
                 &bt BT_CLR          &none           &none             &none             &to DEF                   &to DEF           &none              &none           &none           &bt BT_CLR          
-                &none               &none           &none             &none             &none                     &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      
+                &none               &none           &none             &none             &to MAC                   &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      
                 &bootloader     &ext_power EP_ON    &out OUT_USB      &out OUT_BLE      &sys_reset                &sys_reset        &none              &none      &ext_power EP_ON     &bootloader            
                                                     &trans            &trans            &trans                    &trans            &trans             &trans
                         >; 
