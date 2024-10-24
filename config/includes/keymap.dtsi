@@ -103,7 +103,7 @@ ZMK_HOLD_TAP(hmr,
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <SWP_POS>;
         };
-        swappermac: swapper {
+        swappermac: swappermac {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
