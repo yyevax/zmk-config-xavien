@@ -166,7 +166,7 @@ ZMK_HOLD_TAP(hmr,
                         >;
                 };
                 default_layer {  
-                label = "BASE"; //DEFAULT
+                label = "MAC"; //MAC DEFAULT
                 bindings = <
                 &kp Q                 &kp W         &kp F             &kp P             &kp B                      &kp J            &kp L              &kp U           &kp Y           &kp SEMI        
                 &hml LCTRL A          &hml LALT R   &hml LGUI S       &hml LSHFT T      &kp G                      &kp M            &hmr RSHFT N       &hmr LGUI E     &hmr RALT I     &hmr RCTRL O     
