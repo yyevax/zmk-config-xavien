@@ -96,7 +96,7 @@
         COMBO(VAL,            &to VAL,       LT0 RT0,         SYS,          80,  50)  //    VAL LAYER CHANGE
         COMBO(TAP,            &to TAP,       LM0 RM0,         SYS,          80,  50)  //    TAP LAYER CHANGE
         COMBO(EXTRA,        &to EXTRA,       LB0 RB0,         SYS,          80,  50)  //    EXTRA LAYER CHANGE
-        COMBO(EXTRA,          &to DEF,       LT4 RT4,         SYS,          80,  50)  //    EXTRA LAYER CHANGE
+        COMBO(DEFAULT,          &to DEF,       LT4 RT4,         SYS,          80,  50)  //    EXTRA LAYER CHANGE
 
         /*combo_rbrc {
             timeout-ms = <50>;
