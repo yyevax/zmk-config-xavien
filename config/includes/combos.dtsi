@@ -64,15 +64,15 @@
 
 
         //MACNAV
-        COMBO(UNDO,         &kp LG(Z),       LT3 LT2,         MACNAV,      80,  50)  //    UNDO
-        COMBO(REDO,         &kp LG(Y),       LT2 LT1,         MACNAV,      80,  50)  //    REDO
-        COMBO(BSPC,          &kp BSPC,       LM3 LM2,         MACNAV,      80,  50)  //    BACKSPACE
-        COMBO(SPACE,        &kp SPACE,       LM2 LM1,         MACNAV,      80,  50)  //    SPACE
-        COMBO(CAPSLOCK,  &kp CAPSLOCK,       LM1 LM0,         MACNAV,      80,  50)  //    CAPSLOCK
+        COMBO(UNDO_MAC,         &kp LG(Z),       LT3 LT2,         MACNAV,      80,  50)  //    UNDO
+        COMBO(REDO_MAC,         &kp LG(Y),       LT2 LT1,         MACNAV,      80,  50)  //    REDO
+        COMBO(BSPC_MAC,          &kp BSPC,       LM3 LM2,         MACNAV,      80,  50)  //    BACKSPACE
+        COMBO(SPACE_MAC,        &kp SPACE,       LM2 LM1,         MACNAV,      80,  50)  //    SPACE
+        COMBO(CAPSLOCK_MAC,  &kp CAPSLOCK,       LM1 LM0,         MACNAV,      80,  50)  //    CAPSLOCK
 
-        COMBO(FIND,        &kp LG(F),    LT3 LT2 LT1,        MACNAV,       80,  50)  //    CTRL + F
-        COMBO(ALL,         &kp LG(A),        LM4 LM3,        MACNAV,       80,  50)  //    CTRL + A
-        COMBO(SAVE,        &kp LG(S),    LM3 LM2 LM1,        MACNAV,       80,  50)  //    CTRL + S
+        COMBO(FIND_MAC,        &kp LG(F),    LT3 LT2 LT1,        MACNAV,       80,  50)  //    CTRL + F
+        COMBO(ALL_MAC,         &kp LG(A),        LM4 LM3,        MACNAV,       80,  50)  //    CTRL + A
+        COMBO(SAVE_MAC,        &kp LG(S),    LM3 LM2 LM1,        MACNAV,       80,  50)  //    CTRL + S
 
 
         //MOUSE
