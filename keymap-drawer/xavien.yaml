@@ -651,3 +651,6 @@ combos:
 - p: [24, 25]
   k: {t: extra, h: toggle}
   l: [sys]
+- p: [0, 9]
+  k: {t: default, h: toggle}
+  l: [sys]
