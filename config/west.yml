@@ -8,9 +8,11 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: urob
       url-base: https://github.com/urob
+    - name: duanexavierbondad
+      url-base: https://github.com/duanexavierbondad
   projects:
     - name: zmk
-      remote: caksoylar
+      remote: duanexavierbondad
       revision: caksoylar/experimental
       import: app/west.yml
     - name: zmk-rgbled-widget
