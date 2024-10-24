@@ -68,7 +68,7 @@ layers:
   - .
   - /
   - {t: Esc, h: media}
-  - {t: ↹, h: nav}
+  - {t: ↹, h: macnav}
   - {t: ␣, h: macscreen}
   - {t: ⌫, h: sym}
   - {t: ⏎, h: num}
@@ -147,8 +147,43 @@ layers:
   - Left Click
   - Right Click
   - ''
-  macnav: ['', '', ↑, Gui+ C, Gui+ V, '', Scroll ↑, Mouse ↑, Scroll ↓, '', Home, ←, ↓, →, End, Scroll ←, Mouse ←, Mouse ↓, Mouse →, Scroll →, '', Gui+ X, '', '',
-    '', '', '', '', '', '', '', '', '', Left Click, Right Click, '']
+  macnav:
+  - ''
+  - ''
+  - ↑
+  - Gui+ C
+  - Gui+ V
+  - ''
+  - Scroll ↑
+  - Mouse ↑
+  - Scroll ↓
+  - ''
+  - Home
+  - ←
+  - ↓
+  - →
+  - End
+  - Scroll ←
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - Scroll →
+  - ''
+  - Gui+ X
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - Left Click
+  - Right Click
+  - ''
   sym:
   - '%'
   - '&'
