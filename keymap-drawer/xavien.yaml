@@ -10,6 +10,43 @@ layers:
   - U
   - Y
   - ;
+  - '&hml LGUI A'
+  - '&hml LALT R'
+  - '&hml LCTRL S'
+  - '&hml LSHFT T'
+  - G
+  - M
+  - '&hmr RSHFT N'
+  - '&hmr RCTRL E'
+  - '&hmr RALT I'
+  - '&hmr RGUI O'
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - {t: Esc, h: media}
+  - {t: ↹, h: nav}
+  - {t: ␣, h: screen}
+  - {t: ⌫, h: sym}
+  - {t: ⏎, h: num}
+  - {t: ⌦, h: fun}
+  mac:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
   - '&hml LCTRL A'
   - '&hml LALT R'
   - '&hml LGUI S'

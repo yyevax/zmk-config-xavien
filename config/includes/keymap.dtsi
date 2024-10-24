@@ -165,7 +165,7 @@ ZMK_HOLD_TAP(hmr,
                                                     &lt MEDIA ESC     &lt NAV TAB       &lt SCREEN SPACE            &lt SYM BSPC     &lt NUM RET        &lt FUN DEL
                         >;
                 };
-                default_layer {  
+                mac_layer {  
                 label = "MAC"; //MAC DEFAULT
                 bindings = <
                 &kp Q                 &kp W         &kp F             &kp P             &kp B                      &kp J            &kp L              &kp U           &kp Y           &kp SEMI        
