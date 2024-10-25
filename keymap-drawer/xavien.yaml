@@ -272,7 +272,7 @@ layers:
   - Ctl+ A
   - ''
   - Gui+ S
-  - Gui+ ↹
+  - Win Prev
   - '&swappermac'
   - ''
   - ''
