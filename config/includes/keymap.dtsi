@@ -43,6 +43,10 @@
 #define D_RT   LC(LG(RIGHT))
 #define D_CL   LC(LG(F4))
 
+//Mac desktop navigation shortcuts
+#define DMAC_LT   LC(LEFT)
+#define DMAC_RT   LC(RIGHT)
+
 #define TAB_RT LC(TAB)
 #define TAB_LT LC(LS(TAB))
 
@@ -226,8 +230,8 @@ ZMK_HOLD_TAP(hmr,
                 bindings = <
                 &none                   &none       &kp LC(F)         &kp TAB_LT         &kp TAB_RT                &none            &none              &none           &none           &none          
                 &kp LC(A)               &none       &kp LC(S)         &kp LS(TAB)        &swapper                  &none            &none              &none           &none           &none         
-                &none                   &none       &none             &kp D_LT           &kp D_RT                  &none            &none              &none           &none           &none          
-                                                    &trans            &trans            &trans                     &trans           &trans             &trans
+                &none                   &none       &none             &kp DMAC_LT        &kp DMAC_RT               &none            &none              &none           &none           &none          
+                                                    &trans            &trans             &trans                    &trans           &trans             &trans
                         >;
                 };
                 macscreen_layer {   
