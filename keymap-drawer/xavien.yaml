@@ -245,8 +245,8 @@ layers:
   - ''
   - ''
   - ''
-  - Ctl+ ←
-  - Ctl+ →
+  - Desk Left
+  - Desk Right
   - ''
   - ''
   - ''
@@ -282,8 +282,8 @@ layers:
   - ''
   - ''
   - ''
-  - Desk Left
-  - Desk Right
+  - Ctl+ ←
+  - Ctl+ →
   - ''
   - ''
   - ''

@@ -230,7 +230,7 @@ ZMK_HOLD_TAP(hmr,
                 bindings = <
                 &none                   &none       &kp LC(F)         &kp TAB_LT         &kp TAB_RT                &none            &none              &none           &none           &none          
                 &kp LC(A)               &none       &kp LC(S)         &kp LS(TAB)        &swapper                  &none            &none              &none           &none           &none         
-                &none                   &none       &none             &kp DMAC_LT        &kp DMAC_RT               &none            &none              &none           &none           &none          
+                &none                   &none       &none             &kp D_LT           &kp D_RT               &none            &none              &none           &none           &none          
                                                     &trans            &trans             &trans                    &trans           &trans             &trans
                         >;
                 };
@@ -238,9 +238,9 @@ ZMK_HOLD_TAP(hmr,
                 label = "MACSCREEN"; //MAC SCREEN
                 bindings = <
                 &none                   &none       &kp LG(F)         &kp TAB_LT         &kp TAB_RT                &none            &none              &none           &none           &none          
-                &kp LC(A)               &none       &kp LG(S)         &kp LG(TAB)        &swappermac              &none            &none              &none           &none           &none         
-                &none                   &none       &none             &kp D_LT           &kp D_RT                  &none            &none              &none           &none           &none          
-                                                    &trans            &trans            &trans                     &trans           &trans             &trans
+                &kp LC(A)               &none       &kp LG(S)         &kp LG(TAB)        &swappermac               &none            &none              &none           &none           &none         
+                &none                   &none       &none             &kp DMAC_LT        &kp DMAC_RT               &none            &none              &none           &none           &none          
+                                                    &trans            &trans             &trans                    &trans           &trans             &trans
                         >;
                 };
                 fun_layer {  
