@@ -51,27 +51,7 @@
         COMBO(EQUAL,        &kp EQUAL,       RB1 RB2 RB3,     DEF,          80,  50)  //    =
 
         //MAC
-        COMBO(LBRC,          &kp LBRC,       LT3 LT2,         MAC,          80,  50)  //    {
-        COMBO(RBRC,          &kp RBRC,       LT2 LT1,         MAC,          80,  50)  //    }
-        COMBO(LPAR,          &kp LPAR,       LM3 LM2,         MAC,          80,  50)  //    (
-        COMBO(RPAR,          &kp RPAR,       LM2 LM1,         MAC,          80,  50)  //    )
-        COMBO(LBKT,          &kp LBKT,       LB3 LB2,         MAC,          80,  50)  //    [
-        COMBO(RBKT,          &kp RBKT,       LB2 LB1,         MAC,          80,  50)  //    ]
-
-        COMBO(UNDER1,       &kp UNDER,       LT3 LT2 LT1,     MAC,          80,  50)  //    _
-        COMBO(MINUS,        &kp MINUS,       LM3 LM2 LM1,     MAC,          80,  50)  //    -
-        COMBO(EXCL,          &kp EXCL,       LB3 LB2 LB1,     MAC,          80,  50)  //    !
-
-        COMBO(SEMI,          &kp SEMI,       RT1 RT2,         MAC,          80,  50)  //    ;
-        COMBO(COLON,        &kp COLON,       RT2 RT3,         MAC,          80,  50)  //    :
-        COMBO(DQT,            &kp DQT,       RM1 RM2,         MAC,          80,  50)  //    "
-        COMBO(SQT,            &kp SQT,       RM2 RM3,         MAC,          80,  50)  //    '
-        COMBO(L_THAN,   &kp LESS_THAN,       RB1 RB2,         MAC,          80,  50)  //    <
-        COMBO(G_THAN,    &kp GREATER_THAN,   RB2 RB3,         MAC,          80,  50)  //    >
-
-        COMBO(PIPE,          &kp PIPE,       RT1 RT2 RT3,     MAC,          80,  50)  //    |
-        COMBO(AMPS,          &kp AMPS,       RM1 RM2 RM3,     MAC,          80,  50)  //    &
-        COMBO(EQUAL,        &kp EQUAL,       RB1 RB2 RB3,     MAC,          80,  50)  //    =
+        
 
 
 
