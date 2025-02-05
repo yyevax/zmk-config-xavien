@@ -244,7 +244,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Gui+Ctl+F4
   - Desk Left
   - Desk Right
   - ''
@@ -281,7 +281,7 @@ layers:
   - ''
   - ''
   - ''
-  - Ctl+W
+  - Gui+W
   - Ctl+←
   - Ctl+→
   - ''
