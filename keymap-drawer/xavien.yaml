@@ -137,8 +137,8 @@ layers:
   - ''
   - ''
   - ''
-  - KC LALT(LEFT)
-  - KC LALT(RIGHT)
+  - Alt+←
+  - Alt+→
   - ''
   - ''
   - ''
@@ -174,8 +174,8 @@ layers:
   - ''
   - ''
   - ''
-  - KC LOPT(LEFT)
-  - KC LOPT(RIGHT)
+  - KC LO(LEFT)
+  - KC LO(RIGHT)
   - ''
   - ''
   - ''
