@@ -114,8 +114,8 @@ layers:
   - ''
   - ''
   - ↑
-  - Ctl+ C
-  - Ctl+ V
+  - Ctl+C
+  - Ctl+V
   - ''
   - Scroll ↑
   - Mouse ↑
@@ -132,13 +132,13 @@ layers:
   - Mouse →
   - Scroll →
   - ''
-  - Ctl+ X
+  - Ctl+X
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - KC LALT(LEFT)
+  - KC LALT(RIGHT)
   - ''
   - ''
   - ''
@@ -151,8 +151,8 @@ layers:
   - ''
   - ''
   - ↑
-  - Gui+ C
-  - Gui+ V
+  - Gui+C
+  - Gui+V
   - ''
   - Scroll ↑
   - Mouse ↑
@@ -169,13 +169,13 @@ layers:
   - Mouse →
   - Scroll →
   - ''
-  - Gui+ X
+  - Gui+X
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - KC LOPT(LEFT)
+  - KC LOPT(RIGHT)
   - ''
   - ''
   - ''
@@ -224,7 +224,7 @@ layers:
   SCREEN:
   - ''
   - ''
-  - Ctl+ F
+  - Ctl+F
   - Tab Left
   - Tab Right
   - ''
@@ -232,9 +232,9 @@ layers:
   - ''
   - ''
   - ''
-  - Ctl+ A
+  - Ctl+A
   - ''
-  - Ctl+ S
+  - Ctl+S
   - Win Prev
   - Win Next
   - ''
@@ -261,7 +261,7 @@ layers:
   MACSCREEN:
   - ''
   - ''
-  - Gui+ F
+  - Gui+F
   - Tab Left
   - Tab Right
   - ''
@@ -269,9 +269,9 @@ layers:
   - ''
   - ''
   - ''
-  - Ctl+ A
+  - Ctl+A
   - ''
-  - Gui+ S
+  - Gui+S
   - Win Prev
   - '&swappermac'
   - ''
@@ -282,8 +282,8 @@ layers:
   - ''
   - ''
   - ''
-  - Ctl+ ←
-  - Ctl+ →
+  - Ctl+←
+  - Ctl+→
   - ''
   - ''
   - ''
@@ -628,10 +628,10 @@ combos:
   k: '='
   l: [MAC]
 - p: [1, 2]
-  k: Ctl+ Z
+  k: Ctl+Z
   l: [NAV]
 - p: [2, 3]
-  k: Ctl+ Y
+  k: Ctl+Y
   l: [NAV]
 - p: [11, 12]
   k: ⌫
@@ -643,19 +643,19 @@ combos:
   k: CAPSLOCK
   l: [NAV]
 - p: [1, 2, 3]
-  k: Ctl+ F
+  k: Ctl+F
   l: [NAV]
 - p: [10, 11]
-  k: Ctl+ A
+  k: Ctl+A
   l: [NAV]
 - p: [11, 12, 13]
-  k: Ctl+ S
+  k: Ctl+S
   l: [NAV]
 - p: [1, 2]
-  k: Gui+ Z
+  k: Gui+Z
   l: [MACNAV]
 - p: [2, 3]
-  k: Gui+ Y
+  k: Gui+Y
   l: [MACNAV]
 - p: [11, 12]
   k: ⌫
@@ -667,13 +667,13 @@ combos:
   k: CAPSLOCK
   l: [MACNAV]
 - p: [1, 2, 3]
-  k: Gui+ F
+  k: Gui+F
   l: [MACNAV]
 - p: [10, 11]
-  k: Gui+ A
+  k: Gui+A
   l: [MACNAV]
 - p: [11, 12, 13]
-  k: Gui+ S
+  k: Gui+S
   l: [MACNAV]
 - p: [1, 2, 3]
   k: Tab Close
@@ -682,7 +682,7 @@ combos:
   k: Win Close
   l: [SCREEN]
 - p: [21, 22, 23]
-  k: Ctl+Gui+ F4
+  k: Ctl+Gui+F4
   l: [SCREEN]
 - p: [1, 2, 3]
   k: Tab Close
@@ -691,7 +691,7 @@ combos:
   k: Win Close
   l: [MACSCREEN]
 - p: [21, 22, 23]
-  k: Ctl+Gui+ F4
+  k: Ctl+Gui+F4
   l: [MACSCREEN]
 - p: [0, 9]
   k: {t: BASE, h: toggle}
