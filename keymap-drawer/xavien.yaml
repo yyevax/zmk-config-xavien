@@ -174,8 +174,8 @@ layers:
   - ''
   - ''
   - ''
-  - Alt+←
-  - Alt+→
+  - Gui+←
+  - Gui+→
   - ''
   - ''
   - ''
@@ -233,7 +233,7 @@ layers:
   - ''
   - ''
   - Ctl+A
-  - ''
+  - Ctl+B
   - Ctl+S
   - Win Prev
   - Win Next
@@ -261,7 +261,7 @@ layers:
   MACSCREEN:
   - ''
   - ''
-  - Gui+F
+  - Gui+W
   - Tab Left
   - Tab Right
   - ''
@@ -270,7 +270,7 @@ layers:
   - ''
   - ''
   - Ctl+A
-  - ''
+  - Gui+B
   - Gui+S
   - Win Prev
   - '&swappermac'
@@ -281,7 +281,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Ctl+W
   - Ctl+←
   - Ctl+→
   - ''
