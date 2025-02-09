@@ -111,8 +111,8 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   NAV:
-  - ''
-  - ''
+  - Alt+←
+  - Alt+→
   - ↑
   - Ctl+C
   - Ctl+V
@@ -333,11 +333,21 @@ layers:
   - ''
   - {type: held}
   MED:
-  - ''
-  - ''
   - Vol Up
+  - Left Click
+  - Mouse ↑
+  - Right Click
+  - Scroll ↑
   - ''
-  - MUTE
+  - ''
+  - ''
+  - ''
+  - ''
+  - Vol Down
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - Scroll ↓
   - ''
   - ''
   - ''
@@ -345,18 +355,8 @@ layers:
   - ''
   - ''
   - ⏮️
-  - Vol Down
-  - ⏭️
   - ⏯
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - ⏭️
   - STOP
   - ''
   - ''
