@@ -224,7 +224,7 @@ layers:
   SCREEN:
   - ''
   - ''
-  - Ctl+F
+  - Gui+W
   - Tab Left
   - Tab Right
   - ''
