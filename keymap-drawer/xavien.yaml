@@ -111,8 +111,8 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   NAV:
-  - ''
-  - ''
+  - Alt+←
+  - Alt+→
   - ↑
   - Ctl+C
   - Ctl+V
@@ -137,8 +137,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - Alt+←
+  - Alt+→
   - ''
   - ''
   - ''
@@ -174,8 +174,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - Gui+←
+  - Gui+→
   - ''
   - ''
   - ''
@@ -224,7 +224,7 @@ layers:
   SCREEN:
   - ''
   - ''
-  - Ctl+F
+  - Gui+W
   - Tab Left
   - Tab Right
   - ''
@@ -233,7 +233,7 @@ layers:
   - ''
   - ''
   - Ctl+A
-  - ''
+  - Ctl+B
   - Ctl+S
   - Win Prev
   - Win Next
@@ -244,7 +244,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Gui+Ctl+F4
   - Desk Left
   - Desk Right
   - ''
@@ -261,7 +261,7 @@ layers:
   MACSCREEN:
   - ''
   - ''
-  - Gui+F
+  - Gui+W
   - Tab Left
   - Tab Right
   - ''
@@ -269,8 +269,8 @@ layers:
   - ''
   - ''
   - ''
-  - Ctl+A
-  - ''
+  - Gui+A
+  - Gui+B
   - Gui+S
   - Win Prev
   - '&swappermac'
@@ -281,7 +281,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Gui+W
   - Ctl+←
   - Ctl+→
   - ''
@@ -333,11 +333,21 @@ layers:
   - ''
   - {type: held}
   MED:
-  - ''
-  - ''
   - Vol Up
+  - Left Click
+  - Mouse ↑
+  - Right Click
+  - Scroll ↑
   - ''
-  - MUTE
+  - ''
+  - ''
+  - ''
+  - ''
+  - Vol Down
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - Scroll ↓
   - ''
   - ''
   - ''
@@ -345,18 +355,8 @@ layers:
   - ''
   - ''
   - ⏮️
-  - Vol Down
-  - ⏭️
   - ⏯
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - ⏭️
   - STOP
   - ''
   - ''

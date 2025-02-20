@@ -201,9 +201,9 @@ ZMK_HOLD_TAP(hmr,
                 nav_layer {    
                 label = "NAV"; //NAV
                 bindings = <
-                &none                     &none     &kp UP            &kp LC(C)         &kp LC(V)                  &none            &msc SCRL_UP       &mmv MOVE_UP    &msc SCRL_DOWN  &none                
+                &kp LA(LEFT)     &kp LA(RIGHT)      &kp UP            &kp LC(C)         &kp LC(V)                  &none            &msc SCRL_UP       &mmv MOVE_UP    &msc SCRL_DOWN  &none                
                 &kp HOME              &kp LEFT      &kp DOWN          &kp RIGHT         &kp END                    &msc SCRL_LEFT   &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc SCRL_RIGHT           
-                &none                 &kp LC(X)     &none             &none             &none                      &none            &kp KC_LALT(LEFT)  &kp KC_LALT(RIGHT)  &none       &none           
+                &none                 &kp LC(X)     &none             &none             &none                      &none            &kp LA(LEFT)       &kp LA(RIGHT)   &none           &none           
                                                     &none             &none             &none                      &mkp LCLK        &mkp RCLK          &none
                         >;  
                 };
@@ -212,7 +212,7 @@ ZMK_HOLD_TAP(hmr,
                 bindings = <
                 &none                     &none     &kp UP            &kp LG(C)         &kp LG(V)                  &none            &msc SCRL_UP       &mmv MOVE_UP    &msc SCRL_DOWN  &none                
                 &kp HOME              &kp LEFT      &kp DOWN          &kp RIGHT         &kp END                    &msc SCRL_LEFT   &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc SCRL_RIGHT           
-                &none                 &kp LG(X)     &none             &none             &none                      &none            &kp KC_LOPT(LEFT)  &kp KC_LOPT(RIGHT)    &none     &none           
+                &none                 &kp LG(X)     &none             &none             &none                      &none            &kp LG(LEFT)       &kp LG(RIGHT)   &none           &none                     
                                                     &none             &none             &none                      &mkp LCLK        &mkp RCLK          &none
                         >;  
                 };
@@ -228,18 +228,18 @@ ZMK_HOLD_TAP(hmr,
                 screen_layer {   
                 label = "SCREEN"; //SCREEN
                 bindings = <
-                &none                   &none       &kp LC(F)         &kp TAB_LT         &kp TAB_RT                &none            &none              &none           &none           &none          
-                &kp LC(A)               &none       &kp LC(S)         &kp LS(TAB)        &swapper                  &none            &none              &none           &none           &none         
-                &none                   &none       &none             &kp D_LT           &kp D_RT               &none            &none              &none           &none           &none          
+                &none                   &none       &kp LG(W)         &kp TAB_LT         &kp TAB_RT                &none            &none              &none           &none           &none          
+                &kp LC(A)               &kp LC(B)   &kp LC(S)         &kp LS(TAB)        &swapper                  &none            &none              &none           &none           &none         
+                &none                   &none       &kp LG(LC(F4))    &kp D_LT           &kp D_RT                  &none            &none              &none           &none           &none          
                                                     &trans            &trans             &trans                    &trans           &trans             &trans
                         >;
                 };
                 macscreen_layer {   
                 label = "MACSCREEN"; //MAC SCREEN
                 bindings = <
-                &none                   &none       &kp LG(F)         &kp TAB_LT         &kp TAB_RT                &none            &none              &none           &none           &none          
-                &kp LC(A)               &none       &kp LG(S)         &kp LS(TAB)        &swappermac               &none            &none              &none           &none           &none         
-                &none                   &none       &none             &kp DMAC_LT        &kp DMAC_RT               &none            &none              &none           &none           &none          
+                &none                   &none       &kp LG(W)         &kp TAB_LT         &kp TAB_RT                &none            &none              &none           &none           &none          
+                &kp LG(A)               &kp LG(B)   &kp LG(S)         &kp LS(TAB)        &swappermac               &none            &none              &none           &none           &none         
+                &none                   &none       &kp LG(W)         &kp DMAC_LT        &kp DMAC_RT               &none            &none              &none           &none           &none          
                                                     &trans            &trans             &trans                    &trans           &trans             &trans
                         >;
                 };
@@ -253,14 +253,24 @@ ZMK_HOLD_TAP(hmr,
                         >;
                 };
                 media_layer {  
-                label = "MED"; //MEDIA
+                label = "MED"; //MEDIA         
                 bindings = <
-                &none                 &none         &kp C_VOL_UP      &none             &kp C_MUTE                 &none            &none              &none           &none           &none           
-                &none                 &kp C_PREV    &kp C_VOL_DN      &kp C_NEXT        &kp C_PP                   &none            &none              &none           &none           &none           
-                &none                 &none         &none             &none             &kp C_STOP                 &none            &none              &none           &none           &none           
+                &kp C_VOL_UP          &mkp LCLK     &mmv MOVE_UP      &mkp RCLK         &msc SCRL_UP               &none            &none              &none           &none           &none           
+                &kp C_VOL_DN          &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &msc SCRL_DOWN             &none            &none              &none           &none           &none           
+                &none                 &kp C_PREV    &kp C_PP          &kp C_NEXT        &kp C_STOP                 &none            &none              &none           &none           &none           
                                                     &trans            &trans            &trans                     &trans           &trans             &trans
                         >;
                 };
+                // media_layer {  
+                // label = "MED"; //MEDIA  
+                // bindings = <
+                // &none                 &none         &kp C_VOL_UP      &none             &kp C_MUTE                 &none            &none              &none           &none           &none           
+                // &none                 &kp C_PREV    &kp C_VOL_DN      &kp C_NEXT        &kp C_PP                   &none            &none              &none           &none           &none           
+                // &none                 &none         &none             &none             &kp C_STOP                 &none            &none              &none           &none           &none           
+                //                                     &trans            &trans            &trans                     &trans           &trans             &trans
+                //         >;
+                // };
+
                 val_layer {  
                 label = "VALO"; //VAL
                 bindings = <
