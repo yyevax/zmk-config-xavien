@@ -1,6 +1,3 @@
-layout:
-  qmk_keyboard: corne_rotated
-  layout_name: LAYOUT_split_3x5_3
 layers:
   BASE:
   - Q
@@ -33,12 +30,12 @@ layers:
   - ','
   - .
   - /
-  - {t: Esc, h: MED}
-  - {t: ↹, h: NAV}
-  - {t: ␣, h: SCREEN}
-  - {t: ⌫, h: SYM}
-  - {t: ⏎, h: NUM}
-  - {t: ⌦, h: FUN}
+  - {t: ESC, h: MED}
+  - {t: TAB, h: NAV}
+  - {t: SPACE, h: SCREEN}
+  - {t: BSPC, h: SYM}
+  - {t: RET, h: NUM}
+  - {t: DEL, h: FUN}
   MAC:
   - Q
   - W
@@ -70,12 +67,12 @@ layers:
   - ','
   - .
   - /
-  - {t: Esc, h: MED}
-  - {t: ↹, h: MACNAV}
-  - {t: ␣, h: MACSCREEN}
-  - {t: ⌫, h: SYM}
-  - {t: ⏎, h: NUM}
-  - {t: ⌦, h: FUN}
+  - {t: ESC, h: MED}
+  - {t: TAB, h: MACNAV}
+  - {t: SPACE, h: MACSCREEN}
+  - {t: BSPC, h: SYM}
+  - {t: RET, h: NUM}
+  - {t: DEL, h: FUN}
   NUM:
   - '*'
   - '7'
@@ -114,78 +111,78 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   NAV:
-  - Alt+←
-  - Alt+→
-  - ↑
+  - Alt+LEFT
+  - Alt+RIGHT
+  - UP
   - Ctl+C
   - Ctl+V
   - ''
-  - Scroll ↑
-  - Mouse ↑
-  - Scroll ↓
+  - '&msc SCRL_UP'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_DOWN'
   - ''
-  - Home
-  - ←
-  - ↓
-  - →
-  - End
-  - Scroll ←
-  - Mouse ←
-  - Mouse ↓
-  - Mouse →
-  - Scroll →
+  - HOME
+  - LEFT
+  - DOWN
+  - RIGHT
+  - END
+  - '&msc SCRL_LEFT'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&msc SCRL_RIGHT'
   - ''
   - Ctl+X
   - ''
   - ''
   - ''
   - ''
-  - Alt+←
-  - Alt+→
+  - Alt+LEFT
+  - Alt+RIGHT
   - ''
   - ''
   - ''
   - {type: held}
   - ''
-  - Left Click
-  - Right Click
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - ''
   MACNAV:
   - ''
   - ''
-  - ↑
+  - UP
   - Gui+C
   - Gui+V
   - ''
-  - Scroll ↑
-  - Mouse ↑
-  - Scroll ↓
+  - '&msc SCRL_UP'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_DOWN'
   - ''
-  - Home
-  - ←
-  - ↓
-  - →
-  - End
-  - Scroll ←
-  - Mouse ←
-  - Mouse ↓
-  - Mouse →
-  - Scroll →
+  - HOME
+  - LEFT
+  - DOWN
+  - RIGHT
+  - END
+  - '&msc SCRL_LEFT'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&msc SCRL_RIGHT'
   - ''
   - Gui+X
   - ''
   - ''
   - ''
   - ''
-  - Gui+←
-  - Gui+→
+  - Gui+LEFT
+  - Gui+RIGHT
   - ''
   - ''
   - ''
   - {type: held}
   - ''
-  - Left Click
-  - Right Click
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - ''
   SYM:
   - '%'
@@ -228,8 +225,8 @@ layers:
   - ''
   - Ctl+W
   - Ctl+F
-  - Tab Left
-  - Tab Right
+  - Ctl+Sft+TAB
+  - Ctl+TAB
   - ''
   - ''
   - ''
@@ -238,8 +235,8 @@ layers:
   - Ctl+A
   - Ctl+B
   - Ctl+S
-  - Win Prev
-  - Win Next
+  - Sft+TAB
+  - '&swapper'
   - ''
   - ''
   - ''
@@ -248,8 +245,8 @@ layers:
   - ''
   - ''
   - Gui+Ctl+F4
-  - Desk Left
-  - Desk Right
+  - Ctl+Gui+LEFT
+  - Ctl+Gui+RIGHT
   - ''
   - ''
   - ''
@@ -265,8 +262,8 @@ layers:
   - ''
   - ''
   - Gui+W
-  - Tab Left
-  - Tab Right
+  - Ctl+Sft+TAB
+  - Ctl+TAB
   - ''
   - ''
   - ''
@@ -275,7 +272,7 @@ layers:
   - Gui+A
   - Gui+B
   - Gui+S
-  - Win Prev
+  - Sft+TAB
   - '&swappermac'
   - ''
   - ''
@@ -285,8 +282,8 @@ layers:
   - ''
   - ''
   - Gui+W
-  - Ctl+←
-  - Ctl+→
+  - Ctl+LEFT
+  - Ctl+RIGHT
   - ''
   - ''
   - ''
@@ -303,7 +300,7 @@ layers:
   - F7
   - F8
   - F9
-  - Print Scrn
+  - PSCRN
   - ''
   - ''
   - ''
@@ -323,43 +320,43 @@ layers:
   - F1
   - F2
   - F3
-  - Pause Break
+  - PAUSE BREAK
   - ''
   - ''
   - ''
   - ''
   - ''
   - APP
-  - ↹
-  - ␣
+  - TAB
+  - SPACE
   - {t: ▽, type: trans}
   - ''
   - {type: held}
   MED:
-  - Vol Up
-  - Left Click
-  - Mouse ↑
-  - Right Click
-  - Scroll ↑
+  - VOL UP
+  - '&mkp LCLK'
+  - '&mmv MOVE_UP'
+  - '&mkp RCLK'
+  - '&msc SCRL_UP'
   - ''
   - ''
   - ''
   - ''
   - ''
-  - Vol Down
-  - Mouse ←
-  - Mouse ↓
-  - Mouse →
-  - Scroll ↓
+  - VOL DN
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&msc SCRL_DOWN'
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - ⏮️
-  - ⏯
-  - ⏭️
+  - PREV
+  - PP
+  - NEXT
   - STOP
   - ''
   - ''
@@ -373,7 +370,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   VALO:
-  - ↹
+  - TAB
   - Q
   - W
   - E
@@ -383,7 +380,7 @@ layers:
   - ''
   - ''
   - ''
-  - Shift
+  - LSHFT
   - A
   - S
   - D
@@ -393,7 +390,7 @@ layers:
   - ''
   - ''
   - ''
-  - Ctrl
+  - LCTRL
   - Z
   - X
   - C
@@ -405,7 +402,7 @@ layers:
   - ''
   - V
   - {t: V, h: VAL2}
-  - ␣
+  - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -420,7 +417,7 @@ layers:
   - ''
   - ''
   - ''
-  - Esc
+  - ESC
   - '1'
   - '2'
   - '3'
@@ -430,7 +427,7 @@ layers:
   - ''
   - ''
   - ''
-  - Win Next
+  - '&swapper'
   - ''
   - T
   - Y
@@ -441,8 +438,8 @@ layers:
   - ''
   - ''
   - {t: BASE, h: toggle}
-  - {t: Ctrl, type: held}
-  - ␣
+  - {t: LCTRL, type: held}
+  - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -477,13 +474,13 @@ layers:
   - ','
   - .
   - /
-  - Esc
-  - ↹
-  - ␣
-  - ⌫
-  - ⏎
+  - ESC
+  - TAB
+  - SPACE
+  - BSPC
+  - RET
   - {t: BASE, h: toggle}
-  TAP: [Q, W, F, P, B, J, L, U, Y, ;, A, R, S, T, G, M, N, E, I, O, Z, X, C, D, V, K, H, ',', ., /, Esc, ↹, ␣, ⌫, ⏎, ⌦]
+  TAP: [Q, W, F, P, B, J, L, U, Y, ;, A, R, S, T, G, M, N, E, I, O, Z, X, C, D, V, K, H, ',', ., /, ESC, TAB, SPACE, BSPC, RET, DEL]
   SYS:
   - BT CLR
   - ''
@@ -500,21 +497,21 @@ layers:
   - ''
   - ''
   - {t: MAC, h: toggle}
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - Boot
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - '&bootloader'
   - EP ON
-  - Out USB
-  - Out BLE
-  - Reset
-  - Reset
+  - OUT USB
+  - OUT BLE
+  - '&sys_reset'
+  - '&sys_reset'
   - ''
   - ''
   - EP ON
-  - Boot
+  - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -637,10 +634,10 @@ combos:
   k: Ctl+Y
   l: [NAV]
 - p: [11, 12]
-  k: ⌫
+  k: BSPC
   l: [NAV]
 - p: [12, 13]
-  k: ␣
+  k: SPACE
   l: [NAV]
 - p: [13, 14]
   k: CAPSLOCK
@@ -661,10 +658,10 @@ combos:
   k: Gui+Y
   l: [MACNAV]
 - p: [11, 12]
-  k: ⌫
+  k: BSPC
   l: [MACNAV]
 - p: [12, 13]
-  k: ␣
+  k: SPACE
   l: [MACNAV]
 - p: [13, 14]
   k: CAPSLOCK
@@ -679,19 +676,19 @@ combos:
   k: Gui+S
   l: [MACNAV]
 - p: [1, 2, 3]
-  k: Tab Close
+  k: Ctl+F4
   l: [SCREEN]
 - p: [11, 12, 13]
-  k: Win Close
+  k: Alt+F4
   l: [SCREEN]
 - p: [21, 22, 23]
   k: Ctl+Gui+F4
   l: [SCREEN]
 - p: [1, 2, 3]
-  k: Tab Close
+  k: Ctl+F4
   l: [MACSCREEN]
 - p: [11, 12, 13]
-  k: Win Close
+  k: Alt+F4
   l: [MACSCREEN]
 - p: [21, 22, 23]
   k: Ctl+Gui+F4
@@ -700,7 +697,7 @@ combos:
   k: {t: BASE, h: toggle}
   l: [MACSCREEN]
 - p: [11, 12, 13]
-  k: ⏯
+  k: PP
   l: [MED]
 - p: [1, 2, 3]
   k: {t: BASE, h: toggle}
