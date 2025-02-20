@@ -1,4 +1,7 @@
-layers:
+layout:
+  qmk_keyboard: corne_rotated
+  layout_name: LAYOUT_split_3x5_3
+  layers:
   BASE:
   - Q
   - W
