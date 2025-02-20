@@ -223,8 +223,8 @@ layers:
   - {t: ▽, type: trans}
   SCREEN:
   - ''
-  - ''
-  - Gui+W
+  - Ctl+W
+  - Ctl+F
   - Tab Left
   - Tab Right
   - ''
