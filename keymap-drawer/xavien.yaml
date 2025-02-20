@@ -10,16 +10,16 @@ layers:
   - U
   - Y
   - ;
-  - 'LGUI A'
-  - 'LALT R'
-  - 'LCTRL S'
-  - 'LSHFT T'
+  - '&hml LGUI A'
+  - '&hml LALT R'
+  - '&hml LCTRL S'
+  - '&hml LSHFT T'
   - G
   - M
-  - 'RSHFT N'
-  - 'RCTRL E'
-  - 'RALT I'
-  - 'RGUI O'
+  - '&hmr RSHFT N'
+  - '&hmr RCTRL E'
+  - '&hmr RALT I'
+  - '&hmr RGUI O'
   - Z
   - X
   - C
@@ -47,16 +47,16 @@ layers:
   - U
   - Y
   - ;
-  - 'LCTRL A'
-  - 'LALT R'
-  - 'LGUI S'
-  - 'LSHFT T'
+  - '&hml LCTRL A'
+  - '&hml LALT R'
+  - '&hml LGUI S'
+  - '&hml LSHFT T'
   - G
   - M
-  - 'RSHFT N'
-  - 'LGUI E'
-  - 'RALT I'
-  - 'RCTRL O'
+  - '&hmr RSHFT N'
+  - '&hmr LGUI E'
+  - '&hmr RALT I'
+  - '&hmr RCTRL O'
   - Z
   - X
   - C
@@ -117,20 +117,20 @@ layers:
   - Ctl+C
   - Ctl+V
   - ''
-  - 'SCRL_UP'
-  - 'MOVE_UP'
-  - 'SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_DOWN'
   - ''
   - HOME
   - LEFT
   - DOWN
   - RIGHT
   - END
-  - 'SCRL_LEFT'
-  - 'MOVE_LEFT'
-  - 'MOVE_DOWN'
-  - 'MOVE_RIGHT'
-  - 'SCRL_RIGHT'
+  - '&msc SCRL_LEFT'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&msc SCRL_RIGHT'
   - ''
   - Ctl+X
   - ''
@@ -144,8 +144,8 @@ layers:
   - ''
   - {type: held}
   - ''
-  - 'LCLK'
-  - 'RCLK'
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - ''
   MACNAV:
   - ''
@@ -154,20 +154,20 @@ layers:
   - Gui+C
   - Gui+V
   - ''
-  - 'SCRL_UP'
-  - 'MOVE_UP'
-  - 'SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_DOWN'
   - ''
   - HOME
   - LEFT
   - DOWN
   - RIGHT
   - END
-  - 'SCRL_LEFT'
-  - 'MOVE_LEFT'
-  - 'MOVE_DOWN'
-  - 'MOVE_RIGHT'
-  - 'SCRL_RIGHT'
+  - '&msc SCRL_LEFT'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&msc SCRL_RIGHT'
   - ''
   - Gui+X
   - ''
@@ -181,8 +181,8 @@ layers:
   - ''
   - {type: held}
   - ''
-  - 'LCLK'
-  - 'RCLK'
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - ''
   SYM:
   - '%'
@@ -334,20 +334,20 @@ layers:
   - {type: held}
   MED:
   - VOL UP
-  - 'LCLK'
-  - 'MOVE_UP'
-  - 'RCLK'
-  - 'SCRL_UP'
+  - '&mkp LCLK'
+  - '&mmv MOVE_UP'
+  - '&mkp RCLK'
+  - '&msc SCRL_UP'
   - ''
   - ''
   - ''
   - ''
   - ''
   - VOL DN
-  - 'MOVE_LEFT'
-  - 'MOVE_DOWN'
-  - 'MOVE_RIGHT'
-  - 'SCRL_DOWN'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&msc SCRL_DOWN'
   - ''
   - ''
   - ''
