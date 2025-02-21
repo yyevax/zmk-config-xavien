@@ -1,1 +1,4 @@
+#include <layouts/foostan/corne/6column.dtsi>
+#include <layouts/foostan/corne/5column.dtsi>
+
 
