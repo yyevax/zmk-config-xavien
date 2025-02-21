@@ -24,7 +24,7 @@ include:
     shield: settings_reset
 ### Xiao_Dongle START ###
   - board: seeeduino_xiao_ble
-    shield: corne_dongle_xiao
+    shield: xavien_dongle_xiao
     #  -DCONFIG_ZMK_USB=y  -DCONFIG_ZMK_BLE=y
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Xavien-Xiao-Dongle\" -DCONFIG_ZMK_STUDIO=y
     artifact-name: xavien_dongle_xiao
