@@ -4,13 +4,13 @@
 if SHIELD_XAVIEN_DONGLE
 
 config ZMK_KEYBOARD_NAME
-	default "Xavien Dongle"
+	default "XAVIEN"
 	
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 	
-#config ZMK_USB
-#	default y
+config ZMK_USB
+	default y
 
 endif
 
