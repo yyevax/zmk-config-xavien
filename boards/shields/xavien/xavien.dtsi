@@ -8,11 +8,11 @@
 #include "layouts/layouts.dtsi"
 
 
-&foostan_corne_6col_layout {
+&xavien_six_col_layout {
     transform = <&six_column_transform>;
 };
 
-&foostan_corne_5col_layout {
+&xavien_five_col_layout {
     transform = <&default_transform>;
 };
 
@@ -20,7 +20,7 @@
 
 	chosen {
 		zmk,kscan = &kscan0;
-    		zmk,physical-layout = &foostan_corne_5col_layout;
+    		zmk,physical-layout = &xavien_five_col_layout;
     		zephyr,display = &oled;
 
 	};
