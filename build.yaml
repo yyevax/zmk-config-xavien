@@ -27,10 +27,10 @@ include:
     shield: corne_dongle_xiao
     #  -DCONFIG_ZMK_USB=y  -DCONFIG_ZMK_BLE=y
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Xiao_Dongle\" -DCONFIG_ZMK_STUDIO=y
-    artifact-name: xiao_corne_dongle
+    artifact-name: xavien_dongle_xiao
     snippet: studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
-    shield: corne_dongle_xiao dongle_display
+    shield: xavien_dongle_xiao dongle_display
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Xiao_Dongle_O\"
     artifact-name: xiao_corne_dongle_oled
     snippet: studio-rpc-usb-uart
