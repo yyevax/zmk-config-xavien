@@ -21,7 +21,7 @@
 
 	chosen {
 		zmk,kscan = &kscan0;
-    		zmk,physical-layout = &default_transform;
+    		zmk,physical-layout = &foostan_corne_5col_layout;
     		zephyr,display = &oled;
 
 	};
