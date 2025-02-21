@@ -5,12 +5,12 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <physical_layouts.dtsi>
+
 / {
 
 	chosen {
 		zmk,kscan = &kscan0;
-    		zmk,physical-layout = &default_layout;
+    		zmk,matrix_transform = &default_transform;
     		zephyr,display = &oled;
 
 	};
@@ -30,16 +30,6 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
                         RC(3,3) RC(3,4) RC(3,5)  RC(3,6) RC(3,7) RC(3,8)
 		>;
 	};
-	
-	default_layout: default_layout {
-        compatible = "zmk,physical-layout";
-        display-name = "CORNE";
-        transform = <&default_transform>;
-        kscan = <&kscan0>;
-
-        
-    };	
-
 
 	kscan0: kscan {
 		compatible = "zmk,kscan-gpio-matrix";
