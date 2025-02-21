@@ -10,11 +10,11 @@
 
 
 &foostan_corne_6col_layout {
-    transform = <&default_transform>;
+    transform = <&six_column_transform>;
 };
 
 &foostan_corne_5col_layout {
-    transform = <&five_column_transform>;
+    transform = <&default_transform>;
 };
 
 / {
