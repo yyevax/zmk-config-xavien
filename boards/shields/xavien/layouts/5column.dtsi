@@ -48,7 +48,7 @@
 };
 
 &layouts_xavien_position_map {
-    foostan_corne_5col_posmap: five {
+    xavien_five_col_posmap: five {
         physical-layout = <&xavien_five_col_layout>;
         positions
             = <36  0  1  2  3  4  5  6  7  8  9 37>
