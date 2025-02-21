@@ -53,7 +53,7 @@
     };
 };
 
-&layouts_foostan_corne_position_map {
+&layouts_xavien_position_map {
     foostan_corne_6col_posmap: six {
         physical-layout = <&xavien_six_col_layout>;
         positions
