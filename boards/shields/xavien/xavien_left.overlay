@@ -87,29 +87,38 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 };
 
 &pinctrl {
-    spi0_default: spi0_default {
-        group1 {
+  spi1_default: spi1_default {
+    group1 {
+      group1 {
             psels = <NRF_PSEL(SPIM_MOSI, 1, 7)>,    // Set P1.07 as MOSI
                     <NRF_PSEL(SPIM_SCK, 1, 2)>;     // Set P1.02 as SCK
         };
     };
-    
-    spi0_sleep: spi0_sleep {
-        group1 {
-            psels = <NRF_PSEL(SPIM_MOSI, 1, 7)>,    // Set P1.07 as MOSI
+  };
+  spi1_sleep: spi1_sleep {
+    group1 {
+      psels = <NRF_PSEL(SPIM_MOSI, 1, 7)>,    // Set P1.07 as MOSI
                     <NRF_PSEL(SPIM_SCK, 1, 2)>;     // Set P1.02 as SCK
             low-power-enable;
-        };
     };
+  };
 };
 
-nice_view_spi: &spi0 {
-    compatible = "nordic,nrf-spim";
-    pinctrl-0 = <&spi0_default>;
-    pinctrl-1 = <&spi0_sleep>;
-    pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
-}
+nice_view_spi: &spi1 {
+  compatible = "nordic,nrf-spim";
+  pinctrl-0 = <&spi1_default>;
+  pinctrl-1 = <&spi1_sleep>;
+  pinctrl-names = "default", "sleep";
+  cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
+
+  nice_view: ls0xx@0 {
+    compatible = "sharp,ls0xx";
+    spi-max-frequency = <1000000>;
+    reg = <0>;
+    width = <160>;
+    height = <68>;
+  };
+};
 
 
 // nice view bus
