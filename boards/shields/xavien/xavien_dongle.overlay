@@ -1,10 +1,10 @@
 
 #include "xavien.dtsi"
-
-chosen {
+/{
+	chosen {
     		zephyr,display = &oled;
+	};
 };
-
 
 &kscan0 {
 	col-gpios
