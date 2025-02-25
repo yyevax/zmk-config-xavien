@@ -2,9 +2,10 @@
 
 #include "xavien.dtsi"
 
-chosen {
+/{chosen {
     		zephyr,display = &nice_view;
 	};
+};
 
 &default_transform {
 	col-offset = <6>;
