@@ -11,7 +11,7 @@
 
 &mmv_input_listener {
     input-processors = <&zip_xy_scaler 2 1>;
-}
+};
 
 &msc {
     acceleration-exponent = <0>;      // 0
