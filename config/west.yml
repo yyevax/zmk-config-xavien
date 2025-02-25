@@ -14,8 +14,8 @@ manifest:
       url-base: https://github.com/dhruvinsh
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: duanexavierbondad
+      revision: caksoylar/experimental
       import: app/west.yml
     - name: zmk-rgbled-widget
       remote: caksoylar
