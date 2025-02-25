@@ -1,0 +1,4 @@
+#include "6column.dtsi"
+#include "5column.dtsi"
+
+
