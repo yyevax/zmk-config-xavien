@@ -119,7 +119,7 @@ layers:
   - Ctl+V
   - ''
   - '&msc SCRL_UP'
-  - '&mmv MOVE_Y(1500)'
+  - '&mmv MOVE_Y(-1000)'
   - '&msc SCRL_DOWN'
   - ''
   - HOME
@@ -128,9 +128,9 @@ layers:
   - RIGHT
   - END
   - '&msc SCRL_LEFT'
-  - '&mmv MOVE_X(-1500)'
-  - '&mmv MOVE_Y(-1500)'
-  - '&mmv MOVE_X(1500)'
+  - '&mmv MOVE_X(-1000)'
+  - '&mmv MOVE_Y(1000)'
+  - '&mmv MOVE_X(1000)'
   - '&msc SCRL_RIGHT'
   - ''
   - Ctl+X
