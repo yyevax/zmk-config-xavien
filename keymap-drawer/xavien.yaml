@@ -686,7 +686,7 @@ combos:
   k: Ctl+Gui+F4
   l: [SCREEN]
 - p: [1, 2, 3]
-  k: Ctl+F4
+  k: Gui+W
   l: [MACSCREEN]
 - p: [11, 12, 13]
   k: Alt+F4

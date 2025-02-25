@@ -1617,7 +1617,7 @@ path.combo { stroke: #7f7f7f; }
 <path d="M140,40 l-37,2" class="combo"/>
 <path d="M140,40 l38,6" class="combo"/>
 <rect rx="6" ry="6" x="126" y="27" width="28" height="26" class="combo"/>
-<text x="140" y="40" class="combo tap">Ctl+F4</text>
+<text x="140" y="40" class="combo tap">Gui+W</text>
 </g>
 <g class="combo combopos-1">
 <path d="M140,96 l-37,2" class="combo"/>
