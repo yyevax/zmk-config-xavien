@@ -262,7 +262,7 @@ layers:
   MACSCREEN:
   - ''
   - ''
-  - Gui+W
+  - Gui+F
   - Ctl+Sft+TAB
   - Ctl+TAB
   - ''
@@ -282,7 +282,7 @@ layers:
   - ''
   - ''
   - ''
-  - Gui+W
+  - ''
   - Ctl+LEFT
   - Ctl+RIGHT
   - ''
