@@ -19,9 +19,6 @@ if SHIELD_XAVIEN_LEFT || SHIELD_XAVIEN_RIGHT || SHIELD_XAVIEN_DONGLE || SHIELD_X
 config ZMK_SPLIT
 	default y
 
-config ZMK_POINTING
-	default y
-
 config ZMK_BLE
 	default y
 
