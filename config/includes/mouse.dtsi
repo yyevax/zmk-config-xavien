@@ -1,4 +1,8 @@
-#include <dt-bindings/zmk/mouse.h>
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 800  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 30    // default: 10
+
+#include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
 
 &mmv {
     acceleration-exponent = <1>;      // 1
@@ -6,6 +10,9 @@
     delay-ms = <0>;                   // 0
 };
 
+&mmv_input_listener {
+    input-processors = <&zip_xy_scaler 2 1>;
+};
 
 &msc {
     acceleration-exponent = <0>;      // 0
