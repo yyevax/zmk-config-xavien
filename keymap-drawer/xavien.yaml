@@ -119,7 +119,7 @@ layers:
   - Ctl+V
   - ''
   - '&msc SCRL_UP'
-  - '&mmv MOVE_Y(-800)'
+  - '&mmv MOVE_Y(-ZMK_POINTING_DEFAULT_MOVE_VAL)'
   - '&msc SCRL_DOWN'
   - ''
   - HOME
@@ -128,9 +128,9 @@ layers:
   - RIGHT
   - END
   - '&msc SCRL_LEFT'
-  - '&mmv MOVE_X(-800)'
-  - '&mmv MOVE_Y(800)'
-  - '&mmv MOVE_X(800)'
+  - '&mmv MOVE_X(-ZMK_POINTING_DEFAULT_MOVE_VAL)'
+  - '&mmv MOVE_Y(ZMK_POINTING_DEFAULT_MOVE_VAL)'
+  - '&mmv MOVE_X(ZMK_POINTING_DEFAULT_MOVE_VAL)'
   - '&msc SCRL_RIGHT'
   - ''
   - Ctl+X
