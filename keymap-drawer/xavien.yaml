@@ -112,14 +112,14 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   NAV:
-  - Alt+LEFT
-  - Alt+RIGHT
+  - ''
+  - ''
   - UP
   - Ctl+C
   - Ctl+V
   - ''
   - '&msc SCRL_UP'
-  - '&mmv MOVE_Y(-800)'
+  - '&mmv MOVE_UP'
   - '&msc SCRL_DOWN'
   - ''
   - HOME
@@ -128,9 +128,9 @@ layers:
   - RIGHT
   - END
   - '&msc SCRL_LEFT'
-  - '&mmv MOVE_X(-800)'
-  - '&mmv MOVE_Y(800)'
-  - '&mmv MOVE_X(800)'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
   - '&msc SCRL_RIGHT'
   - ''
   - Ctl+X
@@ -138,8 +138,8 @@ layers:
   - ''
   - ''
   - ''
-  - Alt+LEFT
-  - Alt+RIGHT
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -155,9 +155,9 @@ layers:
   - Gui+C
   - Gui+V
   - ''
-  - '&msc SCRL_DOWN'
-  - '&mmv MOVE_UP'
   - '&msc SCRL_UP'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_DOWN'
   - ''
   - HOME
   - LEFT
@@ -175,8 +175,8 @@ layers:
   - ''
   - ''
   - ''
-  - Gui+LEFT
-  - Gui+RIGHT
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -224,7 +224,7 @@ layers:
   - {t: ▽, type: trans}
   SCREEN:
   - ''
-  - Ctl+W
+  - ''
   - Ctl+F
   - Ctl+Sft+TAB
   - Ctl+TAB
@@ -234,7 +234,7 @@ layers:
   - ''
   - ''
   - Ctl+A
-  - Ctl+B
+  - ''
   - Ctl+S
   - Sft+TAB
   - '&swapper'
@@ -245,7 +245,7 @@ layers:
   - ''
   - ''
   - ''
-  - Gui+Ctl+F4
+  - ''
   - Ctl+Gui+LEFT
   - Ctl+Gui+RIGHT
   - ''
@@ -270,8 +270,8 @@ layers:
   - ''
   - ''
   - ''
-  - Gui+A
-  - Gui+B
+  - Ctl+A
+  - ''
   - Gui+S
   - Sft+TAB
   - '&swappermac'
@@ -334,21 +334,11 @@ layers:
   - ''
   - {type: held}
   MED:
+  - ''
+  - ''
   - VOL UP
-  - '&mkp LCLK'
-  - '&mmv MOVE_UP'
-  - '&mkp RCLK'
-  - '&msc SCRL_UP'
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - VOL DN
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - '&msc SCRL_DOWN'
+  - MUTE
   - ''
   - ''
   - ''
@@ -356,8 +346,18 @@ layers:
   - ''
   - ''
   - PREV
-  - PP
+  - VOL DN
   - NEXT
+  - PP
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - STOP
   - ''
   - ''
