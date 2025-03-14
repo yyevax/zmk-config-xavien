@@ -1,7 +1,7 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_XAVIEN_DONGLE
+if SHIELD_XAVIEN_DONGLE || SHIELD_XAVIEN_DONGLE_XIAO
 
 config ZMK_KEYBOARD_NAME
 	default "Xavien Dongle"
