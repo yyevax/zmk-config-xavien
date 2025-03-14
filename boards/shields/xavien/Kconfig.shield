@@ -9,12 +9,3 @@ config SHIELD_XAVIEN_RIGHT
 
 config SHIELD_XAVIEN_DONGLE
 	def_bool $(shields_list_contains,xavien_dongle)
-
-config SHIELD_XAVIEN_DONGLE_XIAO
-	def_bool $(shields_list_contains,xavien_dongle_xiao)
-
-config SHIELD_XAVIEN_LEFT-MASTER
-	def_bool $(shields_list_contains,xavien_left-master)
-
-config SHIELD_XAVIEN_RIGHT-MASTER
-	def_bool $(shields_list_contains,xavien_right-master)
