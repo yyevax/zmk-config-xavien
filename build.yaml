@@ -19,6 +19,8 @@ include:
     shield: xavien_right
   - board: nice_nano_v2
     shield: xavien_dongle
+  - board: seeeduino_xiao_ble
+    shield: xavien_dongle_xiao
   - board: nice_nano_v2
     shield: settings_reset
 
