@@ -14,9 +14,9 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: xavien_left
+    shield: xavien_left nice_view
   - board: nice_nano_v2
-    shield: xavien_right
+    shield: xavien_right nice_view
   - board: nice_nano_v2
     shield: xavien_dongle
   - board: seeeduino_xiao_ble
