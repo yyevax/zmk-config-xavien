@@ -9,3 +9,6 @@ config SHIELD_XAVIEN_RIGHT
 
 config SHIELD_XAVIEN_DONGLE
 	def_bool $(shields_list_contains,xavien_dongle)
+
+config SHIELD_XAVIEN_DONGLE_XIAO
+	def_bool $(shields_list_contains,xavien_dongle_xiao)
